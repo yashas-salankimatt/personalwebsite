@@ -121,7 +121,7 @@ function Homepage(props: Props) {
 								src="/assets/images/RingMilitaryWalk.jpg"
 								width="auto"
 								height="auto"
-								className="rounded-2xl max-h-75vh max-w-30vw"
+								className="rounded-2xl max-h-75vh"
 							></img>
 							{/* <ImageGallery
 								images={["/assets/images/RingMilitaryWalk.jpg", "/favicon.ico"]}

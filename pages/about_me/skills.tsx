@@ -59,7 +59,7 @@ function Skills(props) {
 						<strong>Software Skills and Technologies: </strong> C++, Javascript,
 						Typescript, HTML/CSS, Tailwind, React, React Native, Python(smart
 						home/IOT Script Writing, ML), Java (Processing, Android Studio),
-						Firebase, Git
+						Firebase, Git, Parallel Computing, CUDA, MPI
 					</a>
 					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
 						Check out where I demonstrate my skills in my{" "}

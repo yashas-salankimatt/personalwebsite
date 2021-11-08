@@ -31,7 +31,7 @@ import pull_out_desk_extender from "../pages/project/woodworking/furniture/pull_
 const projectsList = {
 	Categories: [
 		{
-			name: "Mechatronics",
+			name: "Mechatronics/Hardware",
 			Subcategories: [
 				{
 					name: "Hackathons",
@@ -178,13 +178,13 @@ const projectsList = {
 							component: wells,
 						},
 						{
-							name: "Whitecreek Dorm Model",
+							name: "Whitecreek Apartment Model",
 							component: whitecreek,
 						},
-						{
-							name: "Standard Apartment Model",
-							component: standard,
-						},
+						// {
+						// 	name: "Standard Apartment Model",
+						// 	component: standard,
+						// },
 					],
 				},
 			],

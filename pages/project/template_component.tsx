@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Menu from "../../components/Menu";
+import Menu from "../../../../components/Menu";
 import Link from "next/link";
 
 function Template_component(props) {
@@ -38,7 +38,7 @@ function Template_component(props) {
 					</Link>
 				)}
 				<div
-					className="max-w-lg mt-4 rounded-2xl "
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
@@ -50,16 +50,8 @@ function Template_component(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						This is where the text for the content of the thing would go.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-						fuga quod sit natus ipsam accusamus, accusantium consectetur
-						eligendi recusandae perspiciatis vero illum vel. Consequatur ipsam
-						explicabo libero voluptatibus, expedita harum!
-					</a>
-					<Link href="https://cesg.tamu.edu/faculty/stavros-kalafatis/">
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}></a>
+					{/* <Link href="https://cesg.tamu.edu/faculty/stavros-kalafatis/">
 						<a
 							target="_blank"
 							className={
@@ -71,7 +63,7 @@ function Template_component(props) {
 						>
 							CESG Website
 						</a>
-					</Link>
+					</Link> */}
 				</div>
 			</div>
 		</div>
