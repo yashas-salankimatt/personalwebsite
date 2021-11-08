@@ -5,9 +5,9 @@ import Link from "next/link";
 
 function Template_component(props) {
 	const router = useRouter();
-	const rgbaColor = "rgba(6, 78, 59, .6)";
-	const textColor = "text-green-900";
-	const buttonColor = "bg-green-200";
+	const rgbaColor = "rgba(76, 29, 149, .6)";
+	const textColor = "text-purple-900";
+	const buttonColor = "bg-purple-200";
 
 	const imageDivStyle = "1rem 1rem 0.25rem " + rgbaColor;
 
@@ -59,6 +59,19 @@ function Template_component(props) {
 						eligendi recusandae perspiciatis vero illum vel. Consequatur ipsam
 						explicabo libero voluptatibus, expedita harum!
 					</a>
+					<Link href="https://cesg.tamu.edu/faculty/stavros-kalafatis/">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							CESG Website
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>
