@@ -27,6 +27,8 @@ import plaques from "../pages/project/woodworking/decorations/plaques";
 import catch_all_tray from "../pages/project/woodworking/furniture/catch_all_tray";
 import shoe_stand from "../pages/project/woodworking/furniture/shoe_stand";
 import pull_out_desk_extender from "../pages/project/woodworking/furniture/pull_out_desk_extender";
+import love_sign from "../pages/project/woodworking/decorations/love_sign";
+import tamuhacksign from "../pages/project/woodworking/decorations/tamuhacksign";
 
 const projectsList = {
 	Categories: [
@@ -43,6 +45,10 @@ const projectsList = {
 						{
 							name: "Magic Shelves: Item Carousel",
 							component: magic_shelves,
+						},
+						{
+							name: "Fab Box: A New Kind of Machine",
+							component: fab_box_build,
 						},
 					],
 				},
@@ -127,6 +133,14 @@ const projectsList = {
 					name: "Decorations and Gifts",
 					Projects: [
 						{
+							name: "Intricate LOVE Design",
+							component: love_sign,
+						},
+						{
+							name: "TAMUhack Sign",
+							component: tamuhacksign,
+						},
+						{
 							name: "Light Up Decoration Gifts",
 							component: light_up,
 						},
@@ -155,10 +169,10 @@ const projectsList = {
 							name: "CNC Wooden Shoe Stand",
 							component: shoe_stand,
 						},
-						{
-							name: "Pull Out Desk Extender",
-							component: pull_out_desk_extender,
-						},
+						// {
+						// 	name: "Pull Out Desk Extender",
+						// 	component: pull_out_desk_extender,
+						// },
 					],
 				},
 			],

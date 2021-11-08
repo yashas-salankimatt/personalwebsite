@@ -182,7 +182,7 @@ function Menu(props) {
 								Experience
 							</motion.a>
 						</Link>
-						<Link href="/notable">
+						{/* <Link href="/notable">
 							<motion.a
 								className={
 									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
@@ -199,7 +199,7 @@ function Menu(props) {
 							>
 								Notable Projects
 							</motion.a>
-						</Link>
+						</Link> */}
 					</motion.div>
 				)}
 			</AnimatePresence>
