@@ -1,21 +1,23 @@
 import React from "react";
 import Menu from "../components/Menu";
 import Header from "../components/Header";
+import ExperienceExplorer from "../components/ExperienceExplorer";
 
-interface Props {}
-
-function ExperiencePage(props: Props) {
+function ExperiencePage() {
 	return (
-		<div style={{ overflow: "auto" }}>
-			<div className="flex flex-col">
-				<Menu />
+		<div className="overflow-auto">
+			<Menu />
+			<div className="flex flex-col m-4">
 				<div className=" self-center">
 					<Header
 						HeaderText="Experience"
-						FontColor="text-black-300"
-						UnderlineColor="border-black-300"
+						FontColor="text-green-900"
+						UnderlineColor="border-green-900"
 						UnderlineWeight="12"
 					/>
+				</div>
+				<div>
+					<ExperienceExplorer />
 				</div>
 			</div>
 		</div>

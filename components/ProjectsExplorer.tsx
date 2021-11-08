@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import projectsList from "./ProjectsProvider";
 import ItemElement from "./ItemElement";
-import Default_preview_component from "../pages/project/default_preview_component";
+import Default_preview_component from "./default_preview_component";
 
 function ProjectsExplorer(props) {
 	const [categorySelected, setCategorySelected] = React.useState("");
@@ -12,14 +12,11 @@ function ProjectsExplorer(props) {
 	const [projectsIndex, setProjectsIndex] = React.useState(0);
 	const [projects, setProjects] = React.useState(projectsList);
 	const [previewComponent, setPreviewComponent] = React.useState(
-		<Default_preview_component />
+		<Default_preview_component
+			textColor="text-purple-900"
+			text="Click through the hierarchy to find a project to preview here!"
+		/>
 	);
-
-	// useEffect(() => {}, []);
-
-	useEffect(() => {
-		console.log(projects);
-	}, []);
 
 	return (
 		projects && (
@@ -28,14 +25,14 @@ function ProjectsExplorer(props) {
 					<div
 						style={{
 							minHeight: "70vh",
-							border: "2px solid black",
+							border: "2px solid purple",
 							maxWidth: "90vw",
 						}}
 						className="mt-8 flex-1 flex flex-row overflow-auto"
 					>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid black" }}
+							style={{ border: "1px solid purple" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setCategorySelected("");
@@ -44,12 +41,17 @@ function ProjectsExplorer(props) {
 									setSubCategoriesIndex(0);
 									setProjectSelected("");
 									setProjectsIndex(0);
-									setPreviewComponent(<Default_preview_component />);
+									setPreviewComponent(
+										<Default_preview_component
+											textColor="text-purple-900"
+											text="Click through the hierarchy to find a project to preview here!"
+										/>
+									);
 								}
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4"
+								className="text-2xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
 								style={{ borderBottom: "2px solid black" }}
 							>
 								Categories
@@ -70,12 +72,19 @@ function ProjectsExplorer(props) {
 												setSubCategoriesIndex(0);
 												setProjectSelected("");
 												setProjectsIndex(0);
-												setPreviewComponent(<Default_preview_component />);
+												setPreviewComponent(
+													<Default_preview_component
+														textColor="text-purple-900"
+														text="Click through the hierarchy to find a project to preview here!"
+													/>
+												);
 											}}
 										>
 											<ItemElement
 												name={category.name}
 												selected={categorySelected}
+												bgColor="bg-purple-200"
+												textColor="text-black"
 											/>
 										</div>
 									);
@@ -84,19 +93,24 @@ function ProjectsExplorer(props) {
 						</div>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid black" }}
+							style={{ border: "1px solid purple" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setSubcategorySelected("");
 									setSubCategoriesIndex(0);
 									setProjectSelected("");
 									setProjectsIndex(0);
-									setPreviewComponent(<Default_preview_component />);
+									setPreviewComponent(
+										<Default_preview_component
+											textColor="text-purple-900"
+											text="Click through the hierarchy to find a project to preview here!"
+										/>
+									);
 								}
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4"
+								className="text-2xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
 								style={{ borderBottom: "2px solid black" }}
 							>
 								Subcategories
@@ -119,12 +133,19 @@ function ProjectsExplorer(props) {
 														);
 														setProjectSelected("");
 														setProjectsIndex(0);
-														setPreviewComponent(<Default_preview_component />);
+														setPreviewComponent(
+															<Default_preview_component
+																textColor="text-purple-900"
+																text="Click through the hierarchy to find a project to preview here!"
+															/>
+														);
 													}}
 												>
 													<ItemElement
 														name={subcategory.name}
 														selected={subcategorySelected}
+														bgColor="bg-purple-200"
+														textColor="text-black"
 													/>
 												</div>
 											);
@@ -134,17 +155,22 @@ function ProjectsExplorer(props) {
 						</div>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid black" }}
+							style={{ border: "1px solid purple" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setProjectSelected("");
 									setProjectsIndex(0);
-									setPreviewComponent(<Default_preview_component />);
+									setPreviewComponent(
+										<Default_preview_component
+											textColor="text-purple-900"
+											text="Click through the hierarchy to find a project to preview here!"
+										/>
+									);
 								}
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4"
+								className="text-2xl font-bold font-sans self-center pt-4 pb-4 text-purple-900"
 								style={{ borderBottom: "2px solid black" }}
 							>
 								Projects
@@ -174,6 +200,8 @@ function ProjectsExplorer(props) {
 												<ItemElement
 													name={project.name}
 													selected={projectSelected}
+													bgColor="bg-purple-200"
+													textColor="text-black"
 												/>
 											</div>
 										);
@@ -184,8 +212,8 @@ function ProjectsExplorer(props) {
 					<div
 						style={{
 							height: "70vh",
-							border: "3px solid black",
-							borderLeft: "3px solid black",
+							border: "3px solid purple",
+							borderLeft: "3px solid purple",
 						}}
 						className="mt-8 flex-1"
 					>

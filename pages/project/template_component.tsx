@@ -8,14 +8,16 @@ function Template_component(props) {
 
 	return (
 		<div style={{ overflow: "auto" }} className="flex flex-col max-h-full">
-			{router.pathname != "/projects" && <Menu></Menu>}
+			{router.pathname != ("/projects" && "/about" && "/experience") && (
+				<Menu></Menu>
+			)}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className="text-3xl font-bold font-sans">Template Component Title</a>
 				{router.pathname == "/projects" && (
 					<Link href="/project/template_component">
 						<a
 							target="_blank"
-							className="mt-4 text-lg font-semibold font-sans bg-gray-400 p-2 rounded-md"
+							className="mt-4 text-lg font-semibold font-sans bg-gray-200 p-2 rounded-md"
 						>
 							Click to open project page in new tab
 						</a>

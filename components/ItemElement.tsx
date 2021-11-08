@@ -1,16 +1,20 @@
 import React from "react";
 
-function ItemElement({ name, selected }) {
+function ItemElement({ name, selected, bgColor, textColor }) {
 	return (
 		<div className="cursor-pointer">
 			{selected != name && (
 				<div className="pl-2 pt-1 pb-1 rounded-md">
-					<a className=" text-base font-semibold font-sans">{name}</a>
+					<a className={" text-base font-semibold font-sans " + textColor}>
+						{name}
+					</a>
 				</div>
 			)}
 			{selected == name && (
-				<div className="pl-2 pt-1 pb-1 rounded-md bg-gray-400">
-					<a className="text-base font-semibold font-sans">{name}</a>
+				<div className={"pl-2 pt-1 pb-1 rounded-md " + bgColor}>
+					<a className={" text-base font-semibold font-sans " + textColor}>
+						{name}
+					</a>
 				</div>
 			)}
 		</div>

@@ -21,21 +21,21 @@ function Homepage(props: Props) {
 				<div className="ml-16 mb-4 mt-4">
 					<Header
 						HeaderText="Yashas"
-						FontColor="text-black-300 "
-						UnderlineColor="border-black"
+						FontColor="text-blue-900 "
+						UnderlineColor="border-blue-900"
 						UnderlineWeight="12"
 					/>
 				</div>
 				<div className="ml-24 mb-4 mt-4">
 					<Header
 						HeaderText="Salankimatt"
-						FontColor="text-black-300 "
-						UnderlineColor="border-black"
+						FontColor="text-blue-900"
+						UnderlineColor="border-blue-900"
 						UnderlineWeight="12"
 					/>
 				</div>
 				<div className="ml-16 mt-4">
-					<a className="text-4xl font-semibold font-sans">
+					<a className="text-4xl text-blue-900 font-bold font-sans">
 						Student, Maker, Entrepreneur
 					</a>
 				</div>
@@ -47,7 +47,9 @@ function Homepage(props: Props) {
 					</a>
 				</div>
 				<div className="ml-16 mt-8">
-					<a className="text-3xl font-medium font-sans">Quick Links</a>
+					<a className="text-3xl text-blue-900 font-bold font-sans">
+						Quick Links
+					</a>
 				</div>
 				<div className="ml-16 mt-8 flex items-center mb-4">
 					<a
@@ -55,7 +57,7 @@ function Homepage(props: Props) {
 						target="_blank"
 					>
 						<button
-							className="text-black-400 bg-gray-200 border-l border-t border-b border-black hover:bg-gray-500 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-l outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+							className="text-blue-900 bg-blue-100 border-l border-t border-b border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-l outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{
 								borderBottom: "1px solid black",
@@ -69,7 +71,7 @@ function Homepage(props: Props) {
 					</a>
 					<a href="https://www.linkedin.com/in/yashas-s/" target="_blank">
 						<button
-							className="text-black-400 bg-gray-200 border border-solid border-black hover:bg-gray-500 hover:text-white font-bold uppercase text-md px-6 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+							className="text-blue-900 bg-blue-100 border-r border-solid border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{
 								borderBottom: "1px solid black",
@@ -82,7 +84,7 @@ function Homepage(props: Props) {
 					</a>
 					<a href="https://www.youtube.com" target="_blank">
 						<button
-							className="text-black-400 bg-gray-200 border-t border-b border-r hover:bg-gray-500 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-r outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+							className="text-blue-900 bg-blue-100 border-solid border-t border-b border-r border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-r outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{
 								borderBottom: "1px solid black",
@@ -97,7 +99,7 @@ function Homepage(props: Props) {
 				<div className="ml-16">
 					<Link href="/projects">
 						<button
-							className="text-black-400 bg-gray-200 hover:bg-gray-500 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+							className="text-blue-900 bg-blue-100 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{ border: "1px solid black" }}
 						>

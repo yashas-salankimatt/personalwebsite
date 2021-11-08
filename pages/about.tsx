@@ -1,21 +1,23 @@
 import React from "react";
 import Menu from "../components/Menu";
 import Header from "../components/Header";
-
-interface Props {}
+import AboutMeExplorer from "../components/AboutMeExplorer";
 
 function AboutMePage() {
 	return (
-		<div style={{ overflow: "auto" }}>
-			<div className="flex flex-col">
-				<Menu />
+		<div className="overflow-auto">
+			<Menu />
+			<div className="flex flex-col m-4">
 				<div className=" self-center">
 					<Header
 						HeaderText="About Me"
-						FontColor="text-black-300"
-						UnderlineColor="border-black-300"
+						FontColor="text-red-900"
+						UnderlineColor="border-red-900"
 						UnderlineWeight="12"
 					/>
+				</div>
+				<div>
+					<AboutMeExplorer />
 				</div>
 			</div>
 		</div>

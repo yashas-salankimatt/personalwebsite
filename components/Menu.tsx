@@ -7,22 +7,30 @@ function Menu(props) {
 	const router = useRouter();
 	const [menuOpened, setMenuOpened] = useState(false);
 	const [pageColor, setPageColor] = useState("");
+	const [menuTextColor, setMenuTextColor] = useState("");
 
 	useEffect(() => {
 		console.log(router.pathname);
 		switch (router.pathname) {
 			case "/":
-				setPageColor("blue-500");
+				setPageColor("bg-blue-100");
+				setMenuTextColor("text-blue-900");
 				break;
 			case "/projects":
+				setPageColor("bg-purple-100");
+				setMenuTextColor("text-purple-900");
 				break;
 			case "/about":
-				setPageColor("red-500"); // should be maroon
+				setPageColor("bg-red-100"); // should be maroon
+				setMenuTextColor("text-red-900");
 				break;
 			case "/experience":
+				setPageColor("bg-green-100");
+				setMenuTextColor("text-green-900");
 				break;
 			case "/notable":
-				setPageColor("yellow-300"); //should be gold
+				setPageColor("bg-yellow-100"); //should be gold
+				setMenuTextColor("text-yellow-600");
 				break;
 
 			default:
@@ -34,28 +42,39 @@ function Menu(props) {
 		<div>
 			<div className="w-full h-24">
 				<div className="w-full h-full flex items-center">
-					<p
+					<div
 						className={
-							"text-4xl font-bold font-sans h-18 ml-16 cursor-pointer hover:underline ease-linear transition-all duration-150"
+							"mt-4 ml-4 rounded-t-2xl h-full flex items-center " +
+							(menuOpened ? pageColor : "")
 						}
-						onClick={() => {
-							setMenuOpened(!menuOpened);
-						}}
+						style={{ width: "98.5vw" }}
 					>
-						MENU
-					</p>
+						<p
+							className={
+								"text-4xl font-bold font-sans h-18 ml-12 cursor-pointer hover:underline ease-linear transition-all duration-150 " +
+								menuTextColor
+							}
+							onClick={() => {
+								setMenuOpened(!menuOpened);
+							}}
+						>
+							MENU
+						</p>
+					</div>
 				</div>
 			</div>
 			{/* ANIMATE THE OPENING OF THE MENU */}
 			{/* Animate the hover on menu items */}
 			{menuOpened && (
 				<div
-					className="w-full z-50 absolute top-24 flex flex-col bg-white"
-					style={{ height: "90vh" }}
+					className={
+						"ml-4 z-50 absolute top-24 rounded-b-2xl flex flex-col " + pageColor
+					}
+					style={{ height: "89vh", width: "98.5vw" }}
 				>
 					<Link href="/">
 						<a
-							className="ml-16 text-6xl font-bold font-sans mb-12"
+							className="mt-8 ml-16 text-6xl font-bold font-sans mb-16 text-blue-900"
 							onClick={() => {
 								setMenuOpened(false);
 							}}
@@ -65,7 +84,7 @@ function Menu(props) {
 					</Link>
 					<Link href="/projects">
 						<a
-							className="ml-16 text-6xl font-bold font-sans mb-12"
+							className="ml-16 text-6xl font-bold font-sans mb-16 text-purple-900"
 							onClick={() => {
 								setMenuOpened(false);
 							}}
@@ -75,7 +94,7 @@ function Menu(props) {
 					</Link>
 					<Link href="/about">
 						<a
-							className="ml-16 text-6xl font-bold font-sans mb-12"
+							className="ml-16 text-6xl font-bold font-sans mb-16 text-red-900"
 							onClick={() => {
 								setMenuOpened(false);
 							}}
@@ -85,7 +104,7 @@ function Menu(props) {
 					</Link>
 					<Link href="/experience">
 						<a
-							className="ml-16 text-6xl font-bold font-sans mb-12"
+							className="ml-16 text-6xl font-bold font-sans mb-16 text-green-900"
 							onClick={() => {
 								setMenuOpened(false);
 							}}
@@ -95,7 +114,7 @@ function Menu(props) {
 					</Link>
 					<Link href="/notable">
 						<a
-							className="ml-16 text-6xl font-bold font-sans mb-12"
+							className="ml-16 text-6xl font-bold font-sans mb-16 text-yellow-600"
 							onClick={() => {
 								setMenuOpened(false);
 							}}
