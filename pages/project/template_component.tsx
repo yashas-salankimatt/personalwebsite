@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Menu from "../../../../components/Menu";
+import Menu from "../../components/Menu";
 import Link from "next/link";
 
 function Template_component(props) {
