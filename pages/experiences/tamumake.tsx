@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import Menu from "../../components/Menu";
 import Link from "next/link";
 
-function Template_component(props) {
+function tamumake(props) {
 	const router = useRouter();
-	const rgbaColor = "rgba(127, 29, 29, .6)";
-	const textColor = "text-red-900";
-	const buttonColor = "bg-red-200";
+	const rgbaColor = "rgba(6, 78, 59, .6)";
+	const textColor = "text-green-900";
+	const buttonColor = "bg-green-200";
 
 	const imageDivStyle = "1rem 1rem 0.25rem " + rgbaColor;
 
@@ -18,12 +18,12 @@ function Template_component(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Template Component Title
+					TAMUmake Hackathon Tech/Hardware Team Director
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
 					router.pathname == "/experience") && (
-					<Link href="/project/template_component">
+					<Link href="/experiences/tamumake">
 						<a
 							target="_blank"
 							className={
@@ -33,11 +33,11 @@ function Template_component(props) {
 								textColor
 							}
 						>
-							Click to open project page in new tab
+							Click to open page in new tab
 						</a>
 					</Link>
 				)}
-				<div
+				{/* <div
 					className="max-w-lg mt-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
@@ -48,21 +48,40 @@ function Template_component(props) {
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div>
+				</div> */}
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						This is where the text for the content of the thing would go.
+						Worked from April 2020 to May 2021.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-						fuga quod sit natus ipsam accusamus, accusantium consectetur
-						eligendi recusandae perspiciatis vero illum vel. Consequatur ipsam
-						explicabo libero voluptatibus, expedita harum!
+						Assessed hacker needs, created hardware care packages for students
+						for Texas A&M's only hardware hackathon.
 					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Created hardware focused workshops and learning content for other
+						students.
+					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Set up and ran the event through an online environment, helping out
+						hackers with hardware problems.
+					</a>
+					<Link href="https://www.tamumake.org/">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							TAMUmake Website
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default Template_component;
+export default tamumake;

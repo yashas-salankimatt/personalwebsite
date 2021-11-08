@@ -13,7 +13,7 @@ module.exports = {
       width: {
         "98vw": '98vw',
         '98-5vw': '98.5vw',
-        'homeboxsm': '98vw',
+        'homeboxsm': '95.5vw',
       },
       maxHeight: {
         "75vh": '75vh',

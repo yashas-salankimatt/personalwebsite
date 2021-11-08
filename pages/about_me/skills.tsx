@@ -49,14 +49,21 @@ function Skills(props) {
 				</div> */}
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Howdy, my name is Yashas Salankimatt and I am an honors senior
-						computer engineering: electrical engineering track student at Texas
-						A&M University.
+						<strong>Hardware Skills and Technologies: </strong> CAD Modeling,
+						Finite Element Analysis, CNC Machining, 3D Printing, ROS (Robot
+						Operating System), Mapping and Localization Systems, TensorFlow,
+						Microcontroller Design, Integrated, and General Circuit Design and
+						Analysis
+					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						<strong>Software Skills and Technologies: </strong> C++, Javascript,
+						Typescript, HTML/CSS, Tailwind, React, React Native, Python(smart
+						home/IOT Script Writing, ML), Java (Processing, Android Studio),
+						Firebase, Git
 					</a>
 					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
-						More information about these and other projects in my{" "}
-						<Link href="/projects">Projects </Link>
-						and <Link href="/experience">Experience </Link> sections!
+						Check out where I demonstrate my skills in my{" "}
+						<Link href="/projects">Projects </Link> section!
 					</a>
 				</div>
 			</div>

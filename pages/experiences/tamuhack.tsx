@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import Menu from "../../components/Menu";
 import Link from "next/link";
 
-function PersonalInterests(props) {
+function tamuhack(props) {
 	const router = useRouter();
-	const rgbaColor = "rgba(127, 29, 29, .6)";
-	const textColor = "text-red-900";
-	const buttonColor = "bg-red-200";
+	const rgbaColor = "rgba(6, 78, 59, .6)";
+	const textColor = "text-green-900";
+	const buttonColor = "bg-green-200";
 
 	const imageDivStyle = "1rem 1rem 0.25rem " + rgbaColor;
 
@@ -18,12 +18,12 @@ function PersonalInterests(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Personal Interests
+					TAMUhack Hardware and Logistics Director
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
 					router.pathname == "/experience") && (
-					<Link href="/about_me/personal_interests">
+					<Link href="/experiences/tamuhack">
 						<a
 							target="_blank"
 							className={
@@ -37,37 +37,50 @@ function PersonalInterests(props) {
 						</a>
 					</Link>
 				)}
-				{/* <div
-					className="max-w-sm mt-4 rounded-2xl "
+				<div
+					className="max-w-lg mt-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/about/tamu-logo.png"
+						src="/assets/images/TAMUhackSign.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div> */}
+				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						In my free time, I enjoy woodworking and making things for myself
-						and friends with my CNC machine, 3D printer, and other tools. I love
-						experimenting with different technologies, methods, and materials to
-						create unique products.
+						From Mar 2020 to current.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						When I'm not making stuff, you'll find me cooking, reading, and
-						playing frisbee, basketball, badminton, or Valorant.
+						Recruiting sponsorships and maintaining sponsor relations for our
+						hackathons, HowdyHack and TAMUhack.
 					</a>
-					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
-						More information my woodworking and miscellaneous projects in my{" "}
-						<Link href="/projects">Projects </Link> section!
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Organizing logistics including prizes, venue, food, live streaming,
+						scheduling, etc.
 					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Occasionally create custom decorations like the one seen above.
+					</a>
+					<Link href="https://tamuhack.com/">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							TAMUhack Website
+						</a>
+					</Link>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default PersonalInterests;
+export default tamuhack;

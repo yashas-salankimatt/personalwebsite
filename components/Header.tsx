@@ -17,7 +17,7 @@ function Header({
 		<div className="flex">
 			<p
 				className={
-					"text-7xl font-bold font-sans h-24 " +
+					"text-6xl md:text-7xl font-bold font-sans h-24 " +
 					FontColor +
 					" " +
 					UnderlineColor

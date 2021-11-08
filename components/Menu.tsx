@@ -78,7 +78,7 @@ function Menu(props) {
 						className={
 							"z-10 mt-4 rounded-t-2xl h-full flex items-center " +
 							(menuOpened
-								? "ml-4 w-98-5vw " + pageColor
+								? "ml-2 w-homeboxsm md:w-98-5vw " + pageColor
 								: "ml-1vw w-98vw " + pageColor)
 						}
 					>
@@ -102,7 +102,7 @@ function Menu(props) {
 				{menuOpened && (
 					<motion.div
 						className={
-							"ml-4 z-50 absolute top-24 rounded-b-2xl flex flex-col w-98-5vw h-projectsboxsm sm:h-89vh " +
+							"ml-2 z-50 absolute top-24 rounded-b-2xl flex flex-col w-homeboxsm md:w-98-5vw h-projectsboxsm md:h-89vh " +
 							pageColor
 						}
 						variants={dropInBg}
@@ -113,7 +113,7 @@ function Menu(props) {
 						<Link href="/">
 							<motion.a
 								className={
-									"mt-8 ml-16 text-7xl font-bold font-sans mb-16 hover:text-8xl  ease-linear transition-all duration-100 " +
+									"mt-8 cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
 									(router.pathname == "/" ? " underline " : " ")
 								}
@@ -131,7 +131,7 @@ function Menu(props) {
 						<Link href="/projects">
 							<motion.a
 								className={
-									"ml-16 text-7xl font-bold font-sans mb-16 hover:text-8xl  ease-linear transition-all duration-100 " +
+									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
 									(router.pathname == "/projects" ? " underline " : " ")
 								}
@@ -149,7 +149,7 @@ function Menu(props) {
 						<Link href="/about">
 							<motion.a
 								className={
-									"ml-16 text-7xl font-bold font-sans mb-16 hover:text-8xl  ease-linear transition-all duration-100 " +
+									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
 									(router.pathname == "/about" ? " underline " : " ")
 								}
@@ -167,7 +167,7 @@ function Menu(props) {
 						<Link href="/experience">
 							<motion.a
 								className={
-									"ml-16 text-7xl font-bold font-sans mb-16 hover:text-8xl  ease-linear transition-all duration-100 " +
+									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
 									(router.pathname == "/experience" ? " underline " : " ")
 								}
@@ -185,7 +185,7 @@ function Menu(props) {
 						<Link href="/notable">
 							<motion.a
 								className={
-									"ml-16 text-7xl font-bold font-sans mb-16 hover:text-8xl  ease-linear transition-all duration-100 " +
+									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
 									(router.pathname == "/notable" ? " underline " : " ")
 								}
