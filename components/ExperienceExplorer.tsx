@@ -17,7 +17,7 @@ function ExperienceExplorer(props) {
 	return (
 		experience && (
 			<div className="flex flex-col justify-center items-center h-3/4 sm:h-3/4 w-full">
-				<div className="flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
+				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
 							minHeight: "70vh",
@@ -36,7 +36,7 @@ function ExperienceExplorer(props) {
 									setCategoryIndex(0);
 									setPreviewComponent(
 										<Default_preview_component
-											textColor="text-red-900"
+											textColor="text-green-900"
 											text="Click through the hierarchy to find out more about my work and experience!"
 										/>
 									);
@@ -44,7 +44,7 @@ function ExperienceExplorer(props) {
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4 text-green-900"
+								className="text-3xl font-bold font-sans self-center pt-4 pb-4 text-green-900"
 								style={{ borderBottom: "2px solid black" }}
 							>
 								Categories
@@ -66,7 +66,8 @@ function ExperienceExplorer(props) {
 												name={category.name}
 												selected={categorySelected}
 												bgColor="bg-green-200"
-												textColor="text-black"
+												textColor="text-green-900"
+												hoverColor="hover:bg-green-200"
 											/>
 										</div>
 									);
@@ -86,6 +87,13 @@ function ExperienceExplorer(props) {
 						{previewComponent}
 					</div>
 				</div>
+				<div
+					className="absolute z-0 bg-gradient-to-b from-green-100 via-green-50 to-white rounded-b-3xl h-projectsboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+					style={{
+						left: "1vw",
+						top: "10vh",
+					}}
+				></div>
 			</div>
 		)
 	);

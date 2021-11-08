@@ -2,22 +2,24 @@ import React, { useEffect } from "react";
 import Header from "../components/Header";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
+import ImageGallery from "../components/ImageGallery";
 
 interface Props {}
 
 function Homepage(props: Props) {
 	const router = useRouter();
+	const [homeAnimate, setHomeAnimate] = React.useState(false);
 
 	useEffect(() => {
 		if (router.pathname == "/home") {
 			router.push("/");
 		}
+		setHomeAnimate(true);
 	}, []);
 
 	return (
-		<div className="flex flex-col-reverse sm:flex-row">
-			<div className="flex flex-col flex-1">
+		<div className="flex flex-col-reverse md:flex-row">
+			<div className="flex flex-col flex-1 z-10">
 				<div className="ml-16 mb-4 mt-4">
 					<Header
 						HeaderText="Yashas"
@@ -40,7 +42,7 @@ function Homepage(props: Props) {
 					</a>
 				</div>
 				<div className="ml-16 mt-6">
-					<a className="text-2xl font-normal font-sans">
+					<a className="text-2xl font-normal font-sans text-blue-900">
 						Howdy! I'm Yashas- a senior computer engineer at Texas A&M
 						University. I'm passionate about robotics and software engineering.
 						Check out some of my projects at the link below.
@@ -52,11 +54,8 @@ function Homepage(props: Props) {
 					</a>
 				</div>
 				<div className="ml-16 mt-8 flex items-center mb-4">
-					<a
-						href="https://drive.google.com/drive/folders/1Kl2E9ovSh4Jc3SCtzujBf4AANwhhYuMa?usp=sharing"
-						target="_blank"
-					>
-						<button
+					<Link href="/resume">
+						<a
 							className="text-blue-900 bg-blue-100 border-l border-t border-b border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-l outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{
@@ -67,8 +66,8 @@ function Homepage(props: Props) {
 							}}
 						>
 							Resume
-						</button>
-					</a>
+						</a>
+					</Link>
 					<a href="https://www.linkedin.com/in/yashas-s/" target="_blank">
 						<button
 							className="text-blue-900 bg-blue-100 border-r border-solid border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
@@ -82,7 +81,10 @@ function Homepage(props: Props) {
 							LinkedIn
 						</button>
 					</a>
-					<a href="https://www.youtube.com" target="_blank">
+					<a
+						href="https://www.youtube.com/channel/UCzRbWFLJMChAwbcXnut-Qog"
+						target="_blank"
+					>
 						<button
 							className="text-blue-900 bg-blue-100 border-solid border-t border-b border-r border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-r outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
@@ -108,17 +110,35 @@ function Homepage(props: Props) {
 					</Link>
 				</div>
 			</div>
-			<div className="flex-1">
-				<div className="relative w-full h-full flex flex-row items-center justify-center">
+			<div className="flex-1 z-10">
+				<div className="relative w-full h-full flex flex-row items-center justify-center rounded">
 					<div className="p-16">
-						<Image
-							src="/assets/images/RingMilitaryWalk.jpg"
-							width="561rem"
-							height="748rem"
-						></Image>
+						<div
+							className="rounded-2xl text-blue"
+							style={{ boxShadow: "1rem 1rem 0.25rem rgba(30, 58, 138, .6)" }}
+						>
+							<img
+								src="/assets/images/RingMilitaryWalk.jpg"
+								width="auto"
+								height="auto"
+								className="rounded-2xl max-h-75vh max-w-30vw"
+							></img>
+							{/* <ImageGallery
+								images={["/assets/images/RingMilitaryWalk.jpg", "/favicon.ico"]}
+								width="75vh"
+								height="30vw"
+							></ImageGallery> */}
+						</div>
 					</div>
 				</div>
 			</div>
+			<div
+				className="absolute z-0 bg-gradient-to-b from-blue-100 via-blue-50 to-white rounded-b-3xl h-homeboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+				style={{
+					left: "1vw",
+					top: "10vh",
+				}}
+			></div>
 		</div>
 	);
 }

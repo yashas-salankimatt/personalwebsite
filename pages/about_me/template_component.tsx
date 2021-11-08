@@ -5,9 +5,9 @@ import Link from "next/link";
 
 function Template_component(props) {
 	const router = useRouter();
-	const rgbaColor = "rgba(6, 78, 59, .6)";
-	const textColor = "text-green-900";
-	const buttonColor = "bg-green-200";
+	const rgbaColor = "rgba(127, 29, 29, .6)";
+	const textColor = "text-red-900";
+	const buttonColor = "bg-red-200";
 
 	const imageDivStyle = "1rem 1rem 0.25rem " + rgbaColor;
 

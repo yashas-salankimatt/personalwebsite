@@ -17,11 +17,11 @@ function AboutMeExplorer(props) {
 	return (
 		about && (
 			<div className="flex flex-col justify-center items-center h-3/4 sm:h-3/4 w-full">
-				<div className="flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
+				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
 							minHeight: "70vh",
-							border: "2px solid black",
+							border: "2px solid rgba(127, 29, 29,1)",
 							minWidth: "30vw",
 							maxWidth: "90vw",
 						}}
@@ -29,7 +29,7 @@ function AboutMeExplorer(props) {
 					>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid black" }}
+							style={{ border: "1px solid rgba(127, 29, 29,1)" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setCategorySelected("");
@@ -44,8 +44,8 @@ function AboutMeExplorer(props) {
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4 text-red-900"
-								style={{ borderBottom: "2px solid black" }}
+								className="text-3xl font-bold font-sans self-center pt-4 pb-4 text-red-900"
+								style={{ borderBottom: "2px solid rgba(127, 29, 29,1)" }}
 							>
 								Categories
 							</a>
@@ -64,7 +64,8 @@ function AboutMeExplorer(props) {
 												name={category.name}
 												selected={categorySelected}
 												bgColor="bg-red-200"
-												textColor="text-black"
+												textColor="text-red-900"
+												hoverColor="hover:bg-red-200"
 											/>
 										</div>
 									);
@@ -75,8 +76,8 @@ function AboutMeExplorer(props) {
 					<div
 						style={{
 							height: "70vh",
-							border: "3px solid black",
-							borderLeft: "3px solid black",
+							border: "3px solid rgba(127, 29, 29,1)",
+							borderLeft: "3px solid rgba(127, 29, 29,1)",
 							flex: "3.5",
 						}}
 						className="mt-8"
@@ -84,6 +85,13 @@ function AboutMeExplorer(props) {
 						{previewComponent}
 					</div>
 				</div>
+				<div
+					className="absolute z-0 bg-gradient-to-b from-red-100 via-red-50 to-white rounded-b-3xl h-projectsboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+					style={{
+						left: "1vw",
+						top: "10vh",
+					}}
+				></div>
 			</div>
 		)
 	);

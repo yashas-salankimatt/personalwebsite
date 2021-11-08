@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 interface Props {
 	HeaderText: string;
@@ -13,10 +13,6 @@ function Header({
 	UnderlineColor,
 	UnderlineWeight,
 }: Props) {
-	// useEffect(() => {
-	// 	console.log(props);
-	// }, []);
-
 	return (
 		<div className="flex">
 			<p

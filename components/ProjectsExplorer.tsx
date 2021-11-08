@@ -21,18 +21,18 @@ function ProjectsExplorer(props) {
 	return (
 		projects && (
 			<div className="flex flex-col justify-center items-center h-3/4 sm:h-3/4 w-full">
-				<div className="flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
+				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
 							minHeight: "70vh",
-							border: "2px solid purple",
+							border: "2px solid rgba(76, 29, 149,1)",
 							maxWidth: "90vw",
 						}}
 						className="mt-8 flex-1 flex flex-row overflow-auto"
 					>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid purple" }}
+							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setCategorySelected("");
@@ -51,8 +51,8 @@ function ProjectsExplorer(props) {
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
-								style={{ borderBottom: "2px solid black" }}
+								className="text-3xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
+								style={{ borderBottom: "2px solid rgba(76, 29, 149,1)" }}
 							>
 								Categories
 							</a>
@@ -84,7 +84,8 @@ function ProjectsExplorer(props) {
 												name={category.name}
 												selected={categorySelected}
 												bgColor="bg-purple-200"
-												textColor="text-black"
+												textColor="text-purple-900"
+												hoverColor="hover:bg-purple-200"
 											/>
 										</div>
 									);
@@ -93,7 +94,7 @@ function ProjectsExplorer(props) {
 						</div>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid purple" }}
+							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setSubcategorySelected("");
@@ -110,8 +111,8 @@ function ProjectsExplorer(props) {
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
-								style={{ borderBottom: "2px solid black" }}
+								className="text-3xl font-bold font-sans self-center pt-4 pb-4  text-purple-900"
+								style={{ borderBottom: "2px solid rgba(76, 29, 149,1)" }}
 							>
 								Subcategories
 							</a>
@@ -145,7 +146,8 @@ function ProjectsExplorer(props) {
 														name={subcategory.name}
 														selected={subcategorySelected}
 														bgColor="bg-purple-200"
-														textColor="text-black"
+														textColor="text-purple-900"
+														hoverColor="hover:bg-purple-200"
 													/>
 												</div>
 											);
@@ -155,7 +157,7 @@ function ProjectsExplorer(props) {
 						</div>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid purple" }}
+							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setProjectSelected("");
@@ -170,8 +172,8 @@ function ProjectsExplorer(props) {
 							}}
 						>
 							<a
-								className="text-2xl font-bold font-sans self-center pt-4 pb-4 text-purple-900"
-								style={{ borderBottom: "2px solid black" }}
+								className="text-3xl font-bold font-sans self-center pt-4 pb-4 text-purple-900"
+								style={{ borderBottom: "2px solid rgba(76, 29, 149,1)" }}
 							>
 								Projects
 							</a>
@@ -201,7 +203,8 @@ function ProjectsExplorer(props) {
 													name={project.name}
 													selected={projectSelected}
 													bgColor="bg-purple-200"
-													textColor="text-black"
+													textColor="text-purple-900"
+													hoverColor="hover:bg-purple-200"
 												/>
 											</div>
 										);
@@ -212,14 +215,21 @@ function ProjectsExplorer(props) {
 					<div
 						style={{
 							height: "70vh",
-							border: "3px solid purple",
-							borderLeft: "3px solid purple",
+							border: "3px solid rgba(76, 29, 149,1)",
+							borderLeft: "3px solid rgba(76, 29, 149,1)",
 						}}
 						className="mt-8 flex-1"
 					>
 						{previewComponent}
 					</div>
 				</div>
+				<div
+					className="absolute z-0 bg-gradient-to-b from-purple-100 via-purple-50 to-white md:bg-purple-100 rounded-b-3xl h-projectsboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+					style={{
+						left: "1vw",
+						top: "10vh",
+					}}
+				></div>
 			</div>
 		)
 	);

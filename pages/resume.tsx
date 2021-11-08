@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import { useRouter } from "next/router";
+import Menu from "../components/Menu";
 
 function resume(props) {
-	const router = useRouter();
-
-	useEffect(() => {
-		router.push(
-			"https://drive.google.com/drive/folders/1Kl2E9ovSh4Jc3SCtzujBf4AANwhhYuMa?usp=sharing"
-		);
-	}, []);
-
-	return <div></div>;
+	return (
+		<div className="w-full h-screen">
+			<Menu></Menu>
+			<iframe width="100%" height="90%" src="/assets/YSResume.pdf"></iframe>
+		</div>
+	);
 }
 
 export default resume;
