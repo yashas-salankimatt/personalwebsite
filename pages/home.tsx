@@ -43,9 +43,9 @@ function Homepage(props: Props) {
 				</div>
 				<div className="ml-16 mt-6">
 					<a className="text-2xl font-normal font-sans text-blue-900">
-						Howdy! I'm Yashas- a senior computer engineer at Texas A&M
+						Howdy! I'm Yashas- a senior computer engineering major at Texas A&M
 						University. I'm passionate about robotics and software engineering.
-						Check out some of my projects at the link below.
+						Check out some of my projects at the link below!
 					</a>
 				</div>
 				<div className="ml-16 mt-8">
@@ -55,7 +55,7 @@ function Homepage(props: Props) {
 				</div>
 				<div className="ml-16 mt-8 flex items-center mb-4">
 					<Link href="/resume">
-						<a
+						<button
 							className="text-blue-900 bg-blue-100 border-l border-t border-b border-blue-900 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-l outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{
@@ -66,7 +66,7 @@ function Homepage(props: Props) {
 							}}
 						>
 							Resume
-						</a>
+						</button>
 					</Link>
 					<a href="https://www.linkedin.com/in/yashas-s/" target="_blank">
 						<button

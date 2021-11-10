@@ -21,18 +21,21 @@ function ProjectsExplorer(props) {
 	return (
 		projects && (
 			<div className="flex flex-col justify-center items-center h-3/4 sm:h-3/4 w-full">
-				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
+				<div className="z-10 flex flex-col md:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
 							minHeight: "70vh",
 							border: "2px solid rgba(76, 29, 149,1)",
 							maxWidth: "90vw",
 						}}
-						className="mt-8 flex-1 flex flex-row overflow-auto"
+						className="mt-8 flex-1 flex flex-col lg:flex-row overflow-auto"
 					>
 						<div
-							className="flex flex-col flex-1"
-							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
+							className="flex flex-col flex-1 min-w-75vw md:min-w-0"
+							style={{
+								border: "1px solid rgba(76, 29, 149,1)",
+								minHeight: "30vh",
+							}}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setCategorySelected("");
@@ -93,8 +96,11 @@ function ProjectsExplorer(props) {
 							</ul>
 						</div>
 						<div
-							className="flex flex-col flex-1"
-							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
+							className="flex flex-col flex-1 min-w-75vw md:min-w-0"
+							style={{
+								border: "1px solid rgba(76, 29, 149,1)",
+								minHeight: "30vh",
+							}}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setSubcategorySelected("");
@@ -156,8 +162,11 @@ function ProjectsExplorer(props) {
 							</ul>
 						</div>
 						<div
-							className="flex flex-col flex-1"
-							style={{ border: "1px solid rgba(76, 29, 149,1)" }}
+							className="flex flex-col flex-1 min-w-75vw md:min-w-0"
+							style={{
+								border: "1px solid rgba(76, 29, 149,1)",
+								minHeight: "40vh",
+							}}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setProjectSelected("");

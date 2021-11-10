@@ -75,7 +75,7 @@ function monica(props) {
 						science fair competitions, going on to win 3rd at the Texas State
 						Engineering Fair.
 					</a>
-					<Link href="https://www.youtube.com/watch?v=jzXKDNldJtc">
+					<Link href="https://www.youtube.com/watch?v=3w24jnoPWDs">
 						<a
 							target="_blank"
 							className={
@@ -95,7 +95,7 @@ function monica(props) {
 						like this could work. The fact that this was the MVP stage is why
 						the sensors are taped onto my body.
 					</a>
-					<Link href="https://www.youtube.com/watch?v=Dfm-TY5Fdog">
+					<Link href="https://www.youtube.com/watch?v=UriEJRX5-_I">
 						<a
 							target="_blank"
 							className={

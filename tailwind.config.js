@@ -21,6 +21,9 @@ module.exports = {
       maxWidth: {
         "30vw": '30vw',
       },
+      minWidth: {
+        "75vw": "75vw",
+      },
       margin: {
         "1vw": '1vw',
       },

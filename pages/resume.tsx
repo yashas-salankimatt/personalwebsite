@@ -5,7 +5,12 @@ function resume(props) {
 	return (
 		<div className="w-full h-screen">
 			<Menu></Menu>
-			<iframe width="100%" height="90%" src="/assets/YSResume.pdf"></iframe>
+			<iframe
+				width="100%"
+				height="85%"
+				src="/assets/YSResume.pdf"
+				className="mt-2"
+			></iframe>
 		</div>
 	);
 }
