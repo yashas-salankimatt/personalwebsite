@@ -13,7 +13,7 @@ function NotablePage(props: Props) {
 				<title>Yashas/Notable Projects</title>
 			</Head>
 			<Menu />
-			<div className="z-10 flex flex-col w-full" style={{ height: "90vh" }}>
+			<div className="z-10 flex flex-col w-full">
 				<div className="z-10 self-center items-center justify-center  flex flex-row flex-wrap">
 					<Header
 						HeaderText="Notable"
