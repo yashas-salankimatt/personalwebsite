@@ -38,6 +38,18 @@ function PersonalWebsite(props) {
 						</a>
 					</Link>
 				)}
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/software/web/WebsiteHome.PNG"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						This website was a personal desire of mine for a while. Previously,

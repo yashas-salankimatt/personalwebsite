@@ -128,6 +128,24 @@ function Menu(props) {
 								Home
 							</motion.a>
 						</Link>
+						<Link href="/notable">
+							<motion.a
+								className={
+									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
+									menuTextColor +
+									(router.pathname == "/notable" ? " underline " : " ")
+								}
+								onClick={() => {
+									setMenuOpened(false);
+								}}
+								variants={dropInTxt}
+								initial="hidden"
+								animate="visible"
+								exit="exit"
+							>
+								Notable Projects
+							</motion.a>
+						</Link>
 						<Link href="/projects">
 							<motion.a
 								className={
@@ -144,24 +162,6 @@ function Menu(props) {
 								exit="exit"
 							>
 								Projects
-							</motion.a>
-						</Link>
-						<Link href="/about">
-							<motion.a
-								className={
-									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
-									menuTextColor +
-									(router.pathname == "/about" ? " underline " : " ")
-								}
-								onClick={() => {
-									setMenuOpened(false);
-								}}
-								variants={dropInTxt}
-								initial="hidden"
-								animate="visible"
-								exit="exit"
-							>
-								About Me
 							</motion.a>
 						</Link>
 						<Link href="/experience">
@@ -182,12 +182,12 @@ function Menu(props) {
 								Experience
 							</motion.a>
 						</Link>
-						{/* <Link href="/notable">
+						<Link href="/about">
 							<motion.a
 								className={
 									"cursor-pointer ml-16 text-6xl md:text-7xl font-bold font-sans mb-16 md:hover:text-8xl hover:text-7xl  ease-linear transition-all duration-100 " +
 									menuTextColor +
-									(router.pathname == "/notable" ? " underline " : " ")
+									(router.pathname == "/about" ? " underline " : " ")
 								}
 								onClick={() => {
 									setMenuOpened(false);
@@ -197,9 +197,9 @@ function Menu(props) {
 								animate="visible"
 								exit="exit"
 							>
-								Notable Projects
+								About Me
 							</motion.a>
-						</Link> */}
+						</Link>
 					</motion.div>
 				)}
 			</AnimatePresence>
