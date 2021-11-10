@@ -24,6 +24,10 @@ module.exports = {
       minWidth: {
         "75vw": "75vw",
       },
+      minHeight: {
+        "70vh": "70vh",
+        "40vh": "40vh",
+      },
       margin: {
         "1vw": '1vw',
       },

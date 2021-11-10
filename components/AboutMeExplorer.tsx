@@ -20,12 +20,11 @@ function AboutMeExplorer(props) {
 				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
-							minHeight: "70vh",
 							border: "2px solid rgba(127, 29, 29,1)",
 							minWidth: "30vw",
 							maxWidth: "90vw",
 						}}
-						className="mt-8 w-5/6 sm:w-auto flex-1 flex flex-row overflow-auto"
+						className="mt-8 w-5/6 min-h-40vh sm:min-h-70vh sm:w-auto flex-1 flex flex-row overflow-auto"
 					>
 						<div
 							className="flex flex-col flex-1"
