@@ -20,16 +20,15 @@ function ExperienceExplorer(props) {
 				<div className="z-10 flex flex-col sm:flex-row justify-center items-center h-full w-full p-4">
 					<div
 						style={{
-							minHeight: "70vh",
-							border: "2px solid black",
+							border: "2px solid rgba(6, 78, 59, .6)",
 							minWidth: "30vw",
 							maxWidth: "90vw",
 						}}
-						className="mt-8 w-5/6 sm:w-auto flex-1 flex flex-row overflow-auto"
+						className="mt-8 w-5/6 min-h-50vh sm:min-h-70vh sm:w-auto flex-1 flex flex-row overflow-auto"
 					>
 						<div
 							className="flex flex-col flex-1"
-							style={{ border: "1px solid black" }}
+							style={{ border: "1px solid rgba(6, 78, 59, .6)" }}
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setCategorySelected("");
@@ -45,7 +44,7 @@ function ExperienceExplorer(props) {
 						>
 							<a
 								className="text-3xl font-bold font-sans self-center pt-4 pb-4 text-green-900"
-								style={{ borderBottom: "2px solid black" }}
+								style={{ borderBottom: "2px solid rgba(6, 78, 59, .6)" }}
 							>
 								Categories
 							</a>
@@ -78,8 +77,8 @@ function ExperienceExplorer(props) {
 					<div
 						style={{
 							height: "70vh",
-							border: "3px solid black",
-							borderLeft: "3px solid black",
+							border: "3px solid rgba(6, 78, 59, .6)",
+							borderLeft: "3px solid rgba(6, 78, 59, .6)",
 							flex: "3.5",
 						}}
 						className="mt-8"
