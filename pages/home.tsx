@@ -133,10 +133,10 @@ function Homepage(props: Props) {
 				</div>
 			</div>
 			<div
-				className="absolute z-0 bg-gradient-to-b from-blue-100 via-blue-50 to-white rounded-b-3xl h-homeboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+				className="absolute z-0 bg-gradient-to-b from-blue-100 via-blue-50 to-white rounded-3xl h-homeboxsm md:h-99vh w-98vw"
 				style={{
 					left: "1vw",
-					top: "10vh",
+					top: "1vh",
 				}}
 			></div>
 		</div>

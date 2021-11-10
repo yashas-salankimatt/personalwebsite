@@ -82,10 +82,10 @@ function NotablePage(props: Props) {
 				</div>
 			</div>
 			<div
-				className="absolute z-0 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white rounded-3xl h-projectsboxsm md:h-screen w-homeboxsm md:w-98vw"
+				className="absolute z-0 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white rounded-3xl h-projectsboxsm md:h-screen w-98vw"
 				style={{
 					left: "1vw",
-					top: "0vh",
+					top: "1vh",
 				}}
 			></div>
 		</div>

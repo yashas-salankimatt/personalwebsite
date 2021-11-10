@@ -85,10 +85,10 @@ function AboutMeExplorer(props) {
 					</div>
 				</div>
 				<div
-					className="absolute z-0 bg-gradient-to-b from-red-100 via-red-50 to-white rounded-b-3xl h-projectsboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+					className="absolute z-0 bg-gradient-to-b from-red-100 via-red-50 to-white rounded-3xl h-projectsboxsm md:h-99vh w-98vw md:left-1vw"
 					style={{
 						left: "1vw",
-						top: "10vh",
+						top: "1vh",
 					}}
 				></div>
 			</div>

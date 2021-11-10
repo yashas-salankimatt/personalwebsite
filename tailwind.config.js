@@ -9,6 +9,7 @@ module.exports = {
         '89vh': '89vh',
         'homeboxsm': '120vh',
         'projectsboxsm': '150vh',
+        '99vh': '99vh',
       },
       width: {
         "98vw": '98vw',
@@ -32,6 +33,9 @@ module.exports = {
       margin: {
         "1vw": '1vw',
       },
+      left: {
+        "1vw": '1vw',
+      }
     },
   },
   variants: {

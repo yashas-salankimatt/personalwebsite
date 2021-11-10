@@ -233,10 +233,10 @@ function ProjectsExplorer(props) {
 					</div>
 				</div>
 				<div
-					className="absolute z-0 bg-gradient-to-b from-purple-100 via-purple-50 to-white md:bg-purple-100 rounded-b-3xl h-projectsboxsm md:h-87.5vh w-homeboxsm md:w-98vw"
+					className="absolute z-0 bg-gradient-to-b from-purple-100 via-purple-50 to-white md:bg-purple-100 rounded-3xl h-projectsboxsm md:h-99vh w-98vw"
 					style={{
 						left: "1vw",
-						top: "10vh",
+						top: "1vh",
 					}}
 				></div>
 			</div>

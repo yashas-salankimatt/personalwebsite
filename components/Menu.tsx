@@ -79,7 +79,7 @@ function Menu(props) {
 							"z-10 mt-4 rounded-t-2xl h-full flex items-center " +
 							(menuOpened
 								? "ml-2 w-homeboxsm md:w-98-5vw " + pageColor
-								: "ml-1vw w-98vw " + pageColor)
+								: "ml-1vw w-98vw ")
 						}
 					>
 						<p
