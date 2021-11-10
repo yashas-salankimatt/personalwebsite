@@ -53,11 +53,11 @@ function Menu(props) {
 			path = "/about";
 			setNeedsBgBox(true);
 			setBgBoxColor("from-red-100 via-red-50 to-white ");
-		} else if (path.includes("experiences")) {
+		} else if (path.includes("experience")) {
 			path = "/experience";
 			setNeedsBgBox(true);
 			setBgBoxColor("from-green-100 via-green-50 to-white ");
-		} else {
+		} else if (path.includes("resume")) {
 			path = "/";
 			setNeedsBgBox(true);
 			setBgBoxColor("from-blue-100 via-blue-50 to-white ");
