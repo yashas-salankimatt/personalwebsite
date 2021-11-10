@@ -28,7 +28,7 @@ function Homepage(props: Props) {
 						UnderlineWeight="12"
 					/>
 				</div>
-				<div className="ml-24 mb-4 mt-4">
+				<div className="ml-20 sm:ml-24 mb-4 mt-4">
 					<Header
 						HeaderText="Salankimatt"
 						FontColor="text-blue-900"
