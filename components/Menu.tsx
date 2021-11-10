@@ -39,10 +39,30 @@ function Menu(props) {
 	const [menuOpened, setMenuOpened] = useState(false);
 	const [pageColor, setPageColor] = useState("");
 	const [menuTextColor, setMenuTextColor] = useState("");
+	const [needsBgBox, setNeedsBgBox] = useState(false);
+	const [bgBoxColor, setBgBoxColor] = useState("");
 
 	useEffect(() => {
 		console.log(router.pathname);
-		switch (router.pathname) {
+		var path = router.pathname;
+		if (path.includes("project")) {
+			path = "/projects";
+			setNeedsBgBox(true);
+			setBgBoxColor("from-purple-100 via-purple-50 to-white ");
+		} else if (path.includes("about")) {
+			path = "/about";
+			setNeedsBgBox(true);
+			setBgBoxColor("from-red-100 via-red-50 to-white ");
+		} else if (path.includes("experiences")) {
+			path = "/experience";
+			setNeedsBgBox(true);
+			setBgBoxColor("from-green-100 via-green-50 to-white ");
+		} else {
+			path = "/";
+			setNeedsBgBox(true);
+			setBgBoxColor("from-blue-100 via-blue-50 to-white ");
+		}
+		switch (path) {
 			case "/":
 				setPageColor("bg-blue-100");
 				setMenuTextColor("text-blue-900");
@@ -203,6 +223,19 @@ function Menu(props) {
 					</motion.div>
 				)}
 			</AnimatePresence>
+			{needsBgBox && (
+				<div
+					className={
+						"absolute bg-gradient-to-b rounded-3xl h-homeboxsm md:h-99vh w-98vw " +
+						bgBoxColor
+					}
+					style={{
+						left: "1vw",
+						top: "1vh",
+						zIndex: -1,
+					}}
+				></div>
+			)}
 		</div>
 	);
 }

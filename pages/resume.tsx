@@ -7,9 +7,9 @@ function resume(props) {
 			<Menu></Menu>
 			<iframe
 				width="100%"
-				height="85%"
+				height="90%"
 				src="/assets/YSResume.pdf"
-				className="mt-2"
+				className="pl-8 pr-8"
 			></iframe>
 		</div>
 	);
