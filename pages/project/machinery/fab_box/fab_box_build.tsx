@@ -50,6 +50,19 @@ function fab_box_build(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=bTZy8Rkpglo">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Devpost YouTube Submission
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						During a hackathon, I decided to try to build a new type of 3D
 						printer- one that was rigid enough to be properly used as a CNC

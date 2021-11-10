@@ -50,6 +50,32 @@ function light_bars(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=jzXKDNldJtc">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Progress Video: YouTube
+						</a>
+					</Link>
+					<Link href="https://www.youtube.com/watch?v=Dfm-TY5Fdog">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Final Result Video: YouTube
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						After the end of my first semester, I realized that I wanted more
 						light in my room, especially near my desk and I did not want to buy
@@ -109,32 +135,6 @@ function light_bars(props) {
 						housing for the control board so that it looks better than the bare
 						components.
 					</a>
-					<Link href="https://www.youtube.com/watch?v=jzXKDNldJtc">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Progress Video: YouTube
-						</a>
-					</Link>
-					<Link href="https://www.youtube.com/watch?v=Dfm-TY5Fdog">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Final Result Video: YouTube
-						</a>
-					</Link>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "

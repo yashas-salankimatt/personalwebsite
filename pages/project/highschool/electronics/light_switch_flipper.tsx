@@ -50,6 +50,32 @@ function light_switch_flipper(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=rhiH2zoVZT8">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Using Siri to Trigger Light Switch Flipper YouTube Demo
+						</a>
+					</Link>
+					<Link href="https://www.youtube.com/watch?v=4jVl8eDFXeI">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Manually Adding Value to Light Switch Servo Demo
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						After having created my automated door closer, and being very
 						satisfied with the fact that I now no longer have to get up to close
@@ -139,32 +165,6 @@ function light_switch_flipper(props) {
 						backend, pictures of the Android app, as well as an IFTTT recipe
 						that I use to turn my lights on through Google Assistant.
 					</a>
-					<Link href="https://www.youtube.com/watch?v=rhiH2zoVZT8">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Using Siri to Trigger Light Switch Flipper
-						</a>
-					</Link>
-					<Link href="https://www.youtube.com/watch?v=4jVl8eDFXeI">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Manually Adding Value to Light Switch Flipper
-						</a>
-					</Link>
 				</div>
 			</div>
 		</div>

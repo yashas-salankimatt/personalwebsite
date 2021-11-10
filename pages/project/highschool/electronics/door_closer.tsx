@@ -50,6 +50,19 @@ function door_closer(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=iB_ou9zzLIU">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							YouTube Video of Demo
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						Having Indian parents, I found myself in a unique quandary. My
 						parents would often come by into my room to ask me a question or
@@ -114,19 +127,6 @@ function door_closer(props) {
 							className="rounded-2xl"
 						></img>
 					</div>
-					<Link href="https://www.youtube.com/watch?v=iB_ou9zzLIU">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							YouTube Video of Demo
-						</a>
-					</Link>
 				</div>
 			</div>
 		</div>

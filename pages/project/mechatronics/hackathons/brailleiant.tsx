@@ -50,6 +50,19 @@ function brailleiant(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=ccOsy5Q9hx4">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Project Demonstration: YouTube
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						This is my project for TAMUMake 2020, Texas A&M’s annual hardware
 						hackathon.
@@ -98,19 +111,7 @@ function brailleiant(props) {
 						also won the accessibility challenge. It was a ton of fun to make
 						this project and to work with such amazing teammates!
 					</a>
-					<Link href="https://www.youtube.com/watch?v=ccOsy5Q9hx4">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Project Demonstration: YouTube
-						</a>
-					</Link>
+
 					<Link href="https://devpost.com/software/braille-iant-o1gcya">
 						<a
 							target="_blank"

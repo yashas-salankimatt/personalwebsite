@@ -50,6 +50,19 @@ function init_progress(props) {
 					></img>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
+					<Link href="https://www.youtube.com/watch?v=pr41tXtrE4A">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Project Demonstration: YouTube
+						</a>
+					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						I’ve always thought that robotics should be accessible to a
 						significantly larger audience seeing as how it’s going to be a large
@@ -81,19 +94,6 @@ function init_progress(props) {
 						future with some closed loop IMU control of the finished robotic arm
 						and that should get me to where I would want to be.
 					</a>
-					<Link href="https://www.youtube.com/watch?v=pr41tXtrE4A">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Project Demonstration: YouTube
-						</a>
-					</Link>
 				</div>
 			</div>
 		</div>
