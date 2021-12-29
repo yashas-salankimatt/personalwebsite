@@ -2,13 +2,6 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
-import Image from "next/image";
-import home from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png";
-import upload from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.png";
-import edit from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.png";
-import lyrics from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.png";
-import recommendations1 from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png";
-import recommendations2 from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png";
 
 function final_proj_315(props) {
 	const router = useRouter();
@@ -48,12 +41,13 @@ function final_proj_315(props) {
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={home}
-						// layout="fill"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<Link href="https://github.com/yashas-salankimatt/315_final_project">
 					<a
@@ -126,73 +120,73 @@ function final_proj_315(props) {
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={home}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={upload}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={edit}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={lyrics}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={recommendations1}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<Image
-						src={recommendations2}
-						// width="auto"
-						// height="auto"
+					<img
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png"
+						width="auto"
+						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
-					></Image>
+					></img>
 				</div>
 			</div>
 		</div>
