@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
+import Image from "next/image";
 
 function final_proj_315(props) {
 	const router = useRouter();
@@ -38,16 +39,18 @@ function final_proj_315(props) {
 					</Link>
 				)}
 				<div
-					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					className="w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
-						width="auto"
-						height="auto"
+					<Image
+						src={
+							"/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
+						}
+						width={1404}
+						height={752}
 						alt="main photo"
 						className="rounded-2xl"
-					></img>
+					></Image>
 				</div>
 				<Link href="https://github.com/yashas-salankimatt/315_final_project">
 					<a

@@ -15,6 +15,7 @@ module.exports = {
         "98vw": '98vw',
         '98-5vw': '98.5vw',
         'homeboxsm': '95.5vw',
+        'lg': '32rem',
       },
       maxHeight: {
         "75vh": '75vh',
