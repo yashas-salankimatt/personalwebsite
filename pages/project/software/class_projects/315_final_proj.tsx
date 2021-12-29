@@ -3,12 +3,12 @@ import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
 import Image from "next/image";
-import home from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png";
-import upload from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.png";
-import edit from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.png";
-import lyrics from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.png";
-import recommendations1 from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png";
-import recommendations2 from "../../../../public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png";
+import home from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png";
+import upload from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.png";
+import edit from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.png";
+import lyrics from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.png";
+import recommendations1 from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png";
+import recommendations2 from "/public/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png";
 
 function final_proj_315(props) {
 	const router = useRouter();
@@ -175,9 +175,9 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<Image
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png"
-						width="500"
-						height="500"
+						src={recommendations1}
+						// width="auto"
+						// height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></Image>
@@ -187,9 +187,9 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<Image
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png"
-						width="500"
-						height="500"
+						src={recommendations2}
+						// width="auto"
+						// height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></Image>
