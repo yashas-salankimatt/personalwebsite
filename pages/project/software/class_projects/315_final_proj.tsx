@@ -38,7 +38,7 @@ function final_proj_315(props) {
 						</a>
 					</Link>
 				)}
-				<div
+				{/* <div
 					className="w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
@@ -51,7 +51,7 @@ function final_proj_315(props) {
 						alt="main photo"
 						className="rounded-2xl"
 					></Image>
-				</div>
+				</div> */}
 				<Link href="https://github.com/yashas-salankimatt/315_final_project">
 					<a
 						target="_blank"
@@ -119,7 +119,7 @@ function final_proj_315(props) {
 						with various other features on the website.
 					</a>
 				</div>
-				<div
+				{/* <div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
@@ -190,7 +190,7 @@ function final_proj_315(props) {
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);
