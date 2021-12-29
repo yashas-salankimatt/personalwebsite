@@ -42,7 +42,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy22.png"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -126,7 +126,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy1-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy11.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -144,7 +144,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy21.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -156,7 +156,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy22.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -175,9 +175,8 @@ function survivor_buddy(props) {
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					// image not loading?
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -189,7 +188,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
