@@ -42,7 +42,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -126,7 +126,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy1-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy1-1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -144,7 +144,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -156,7 +156,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -176,7 +176,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -188,7 +188,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-2.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"

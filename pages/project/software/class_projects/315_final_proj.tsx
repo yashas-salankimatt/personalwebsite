@@ -38,7 +38,7 @@ function final_proj_315(props) {
 						</a>
 					</Link>
 				)}
-				{/* <div
+				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
@@ -46,11 +46,12 @@ function final_proj_315(props) {
 						src={
 							"/assets/images/projects/software/class_projects/315_final_project/home.PNG"
 						}
-						layout="fill"
+						width={1404}
+						height={752}
 						alt="main photo"
 						className="rounded-2xl"
 					></Image>
-				</div> */}
+				</div>
 				<Link href="https://github.com/yashas-salankimatt/315_final_project">
 					<a
 						target="_blank"
@@ -130,12 +131,12 @@ function final_proj_315(props) {
 						className="rounded-2xl"
 					></img>
 				</div>
-				{/* <div
+				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksUpload.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -147,7 +148,7 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksEdit.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -159,7 +160,7 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksLyrics.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -171,7 +172,7 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -183,13 +184,13 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/MusworksRecommendations2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
