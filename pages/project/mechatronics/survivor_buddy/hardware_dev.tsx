@@ -42,7 +42,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/22.png"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy22.png"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -126,7 +126,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/11.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy11.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -144,7 +144,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/21.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy21.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -156,7 +156,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/22.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy22.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -176,7 +176,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/cad1.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD1.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -188,7 +188,7 @@ function survivor_buddy(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/cad2.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD2.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
