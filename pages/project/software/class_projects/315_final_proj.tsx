@@ -39,15 +39,14 @@ function final_proj_315(props) {
 					</Link>
 				)}
 				{/* <div
-					className="w-lg mt-4 mb-4 rounded-2xl "
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<Image
 						src={
-							"/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
+							"/assets/images/projects/software/class_projects/315_final_project/home.PNG"
 						}
-						width={1404}
-						height={752}
+						layout="fill"
 						alt="main photo"
 						className="rounded-2xl"
 					></Image>
@@ -124,7 +123,7 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/home.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/home.PNG"
 						width="auto"
 						height="auto"
 						alt="main photo"
