@@ -124,7 +124,7 @@ function final_proj_315(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/software/class_projects/315_final_project/MusworksHome.png"
+						src="/assets/images/projects/software/class_projects/315_final_project/home.png"
 						width="auto"
 						height="auto"
 						alt="main photo"
