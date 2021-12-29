@@ -38,18 +38,18 @@ function urs_research(props) {
 						</a>
 					</Link>
 				)}
-				{/* <div
-					className="max-w-lg mt-4 rounded-2xl "
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/RingMilitaryWalk.jpg"
+						src="/assets/images/projects/software/urs/mappingdemo.png"
 						width="auto"
 						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div> */}
+				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						From August 2021 to current.
@@ -82,6 +82,19 @@ function urs_research(props) {
 							}
 						>
 							URS Website
+						</a>
+					</Link>
+					<Link href="/project/software/urs/urs_403">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Link to More Info About My Work
 						</a>
 					</Link>
 				</div>

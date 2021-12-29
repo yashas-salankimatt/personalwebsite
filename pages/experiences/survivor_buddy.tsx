@@ -38,18 +38,18 @@ function survivor_buddy(props) {
 						</a>
 					</Link>
 				)}
-				{/* <div
-					className="max-w-lg mt-4 rounded-2xl "
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/RingMilitaryWalk.jpg"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.png"
 						width="auto"
 						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div> */}
+				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						Worked from August 2021 to current.
@@ -76,9 +76,67 @@ function survivor_buddy(props) {
 								textColor
 							}
 						>
-							Survivor Buddy Website
+							Survivor Buddy Official Website
 						</a>
 					</Link>
+					<Link href="/project/mechatronics/survivor_buddy/hardware_dev">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Link to more detailed explanations of my work on the Survivor
+							Buddy hardware.
+						</a>
+					</Link>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy1-1.png"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div className="flex flex-col max-w-5xl mt-8">
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Above is the previous version hardware for Survivor Buddy- created
+						by a senior capstone team. The photos below are the current
+						iteration of the hardware for Survivor Buddy- designed, modeled,
+						fabricated, assembled, and programmed by me.
+					</a>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-1.png"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.png"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
 				</div>
 			</div>
 		</div>

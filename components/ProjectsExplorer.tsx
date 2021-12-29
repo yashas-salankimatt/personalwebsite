@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import projectsList from "./ProjectsProvider";
 import ItemElement from "./ItemElement";
 import Default_preview_component from "./default_preview_component";
+var ReactDOM = require("react-dom");
 
 function ProjectsExplorer(props) {
 	const [categorySelected, setCategorySelected] = React.useState("");
@@ -17,6 +18,13 @@ function ProjectsExplorer(props) {
 			text="Click through the hierarchy to find a project to preview here!"
 		/>
 	);
+
+	// TODO: Fix bug to scroll back up to top on preview component change
+	// useEffect(() => {
+	// 	if (this != null) {
+	// 		previewComponent.position
+	// 	}
+	// }, [previewComponent]);
 
 	return (
 		projects && (

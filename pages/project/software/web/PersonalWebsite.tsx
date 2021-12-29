@@ -50,6 +50,19 @@ function PersonalWebsite(props) {
 						className="rounded-2xl"
 					></img>
 				</div>
+				<Link href="https://github.com/yashas-salankimatt/personalwebsite">
+					<a
+						target="_blank"
+						className={
+							"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+							buttonColor +
+							" " +
+							textColor
+						}
+					>
+						GitHub Repo for this Project
+					</a>
+				</Link>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						This website was a personal desire of mine for a while. Previously,
@@ -77,19 +90,6 @@ function PersonalWebsite(props) {
 						made over the course of a weekend, with a few tweaks to styling and
 						content additions afterwards.
 					</a>
-					<Link href="https://github.com/yashas-salankimatt/personalwebsite">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							GitHub Repo for this Project
-						</a>
-					</Link>
 				</div>
 			</div>
 		</div>

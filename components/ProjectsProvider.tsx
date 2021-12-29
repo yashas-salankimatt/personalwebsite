@@ -29,12 +29,25 @@ import shoe_stand from "../pages/project/woodworking/furniture/shoe_stand";
 import pull_out_desk_extender from "../pages/project/woodworking/furniture/pull_out_desk_extender";
 import love_sign from "../pages/project/woodworking/decorations/love_sign";
 import tamuhacksign from "../pages/project/woodworking/decorations/tamuhacksign";
+import gradient_descent_435 from "../pages/project/software/class_projects/435_gradient_descent";
+import final_proj_315 from "../pages/project/software/class_projects/315_final_proj";
+import survivor_buddy from "../pages/project/mechatronics/survivor_buddy/hardware_dev";
+import urs_403 from "../pages/project/software/urs/urs_403";
 
 const projectsList = {
 	Categories: [
 		{
 			name: "Mechatronics/Hardware",
 			Subcategories: [
+				{
+					name: "Survivor Buddy Research Project",
+					Projects: [
+						{
+							name: "Survivor Buddy Hardware Development",
+							component: survivor_buddy,
+						},
+					],
+				},
 				{
 					name: "Hackathons",
 					Projects: [
@@ -80,11 +93,33 @@ const projectsList = {
 			name: "Software",
 			Subcategories: [
 				{
+					name: "Undergraduate Research Scholars",
+					Projects: [
+						{
+							name: "Intro and First Sem Work",
+							component: urs_403,
+						},
+					],
+				},
+				{
 					name: "Web Dev",
 					Projects: [
 						{
 							name: "Personal Website Development",
 							component: PersonalWebsite,
+						},
+					],
+				},
+				{
+					name: "Notable Class Projects",
+					Projects: [
+						{
+							name: "Parallel Gradient Descent Algorithm",
+							component: gradient_descent_435,
+						},
+						{
+							name: "Music Editing and Recommendation API Project",
+							component: final_proj_315,
 						},
 					],
 				},
