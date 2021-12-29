@@ -175,7 +175,6 @@ function survivor_buddy(props) {
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
-					// image not loading?
 					<img
 						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.png"
 						width="auto"
