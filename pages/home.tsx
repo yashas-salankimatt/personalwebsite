@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../components/Header";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import ImageGallery from "../components/ImageGallery";
+import Image from "next/image";
 
 interface Props {}
 
@@ -117,12 +117,22 @@ function Homepage(props: Props) {
 							className="rounded-2xl text-blue"
 							style={{ boxShadow: "1rem 1rem 0.25rem rgba(30, 58, 138, .6)" }}
 						>
-							<img
-								src="/assets/images/RingMilitaryWalk.jpg"
-								width="auto"
-								height="auto"
-								className="rounded-2xl max-h-75vh"
-							></img>
+							<div className="rounded-2xl max-h-75vh">
+								<img
+									src="/assets/images/RingMilitaryWalk.jpg"
+									width="auto"
+									height="auto"
+									className="rounded-2xl max-h-75vh"
+								></img>
+								{/* <Image
+									src="/assets/images/RingMilitaryWalk.jpg"
+									width={3024}
+									height={4032}
+									layout="responsive"
+									objectFit="cover"
+									className="rounded-2xl"
+								></Image> */}
+							</div>
 							{/* <ImageGallery
 								images={["/assets/images/RingMilitaryWalk.jpg", "/favicon.ico"]}
 								width="75vh"

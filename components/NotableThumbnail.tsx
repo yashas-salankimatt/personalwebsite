@@ -1,7 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-function NotableThumbnail({ imagePath, title, linkPath }) {
+function NotableThumbnail({
+	imagePath,
+	title,
+	linkPath,
+	description = "default",
+}) {
 	return (
 		<div>
 			<Link href={linkPath}>
@@ -19,12 +24,22 @@ function NotableThumbnail({ imagePath, title, linkPath }) {
 								src={imagePath}
 							></img>
 							<div
-								className="absolute top-0 left-0 w-full h-full flex flex-col items-center text-white hover:justify-center  
+								className="absolute top-0 left-0 w-full h-full flex flex-col items-center text-white  
 											 sm:hover:text-white hover:backdrop-blur-md hover:backdrop-brightness-50 ease-linear transition-all duration-100"
 							>
 								<p className="font-bold font-sans w-full text-center text-lg bg-black bg-opacity-50 p-2">
 									{title}
 								</p>
+								{description != "default" && (
+									<div
+										className="absolute top-0 left-0 w-full h-full flex flex-col items-center text-transparent hover:text-white hover:justify-center  
+								sm:hover:text-white ease-linear transition-all duration-100"
+									>
+										<p className="font-semibold font-sans w-full text-center text-lg p-2">
+											{description}
+										</p>
+									</div>
+								)}
 							</div>
 						</div>
 					</div>
