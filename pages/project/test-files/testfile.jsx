@@ -2,8 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../components/Menu";
 import Link from "next/link";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
+import ModelViewer from "../../../components/ModelViewer";
 
 function Box() {
 	return (
@@ -48,6 +47,16 @@ function Template_component(props) {
 						</a>
 					</Link>
 				)}
+				<div className="rounded-2xl">
+					<ModelViewer
+						objectFilePath={"/assets/CNC2.0.obj"}
+						// autoRotate={false}
+						scale={4}
+						autoRotateSpeed={0.5}
+						className="rounded-2xl"
+						stars={false}
+					></ModelViewer>
+				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
@@ -59,13 +68,6 @@ function Template_component(props) {
 						alt="main photo"
 						className="rounded-2xl"
 					></img> */}
-					<Canvas>
-						<OrbitControls enableRotate={true} />
-						<Stars />
-						<ambientLight intensity={0.1} />
-						<spotLight position={[10, 15, 10]} angle={0.3} />
-						<Box></Box>
-					</Canvas>
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}></a>

@@ -27,7 +27,11 @@ function Model({
 	box3.getSize(size);
 	console.log(size);
 	if (position[0] == -1) {
-		position = [0, -(size.z / 3) * scale, 0];
+		position = [
+			(-size.x / 2) * scale,
+			-(size.z / 3) * scale,
+			(-size.y / 2) * scale,
+		];
 	}
 
 	return (
