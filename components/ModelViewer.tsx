@@ -6,7 +6,13 @@ import { Box3, Vector3 } from "three";
 
 function Loader() {
 	const { progress } = useProgress();
-	return <Html center>{progress} % loaded</Html>;
+	return (
+		<Html center>
+			<h1 className=" text-white font-bold font-sans text-xl">
+				{progress} % loaded
+			</h1>
+		</Html>
+	);
 }
 
 function Model({
@@ -53,31 +59,31 @@ function ModelViewer({
 	return (
 		<div className="w-full h-full bg-black">
 			<Canvas>
-				<Suspense fallback={<Loader />}>
-					<OrbitControls
-						minDistance={minDistance}
-						maxDistance={maxDistance}
-						autoRotate={autoRotate}
-						autoRotateSpeed={autoRotateSpeed}
-					/>
-					{stars && <Stars />}
-					<ambientLight intensity={ambientLightIntensity} />
+				<OrbitControls
+					minDistance={minDistance}
+					maxDistance={maxDistance}
+					autoRotate={autoRotate}
+					autoRotateSpeed={autoRotateSpeed}
+				/>
+				{stars && <Stars />}
+				<ambientLight intensity={ambientLightIntensity} />
+				<spotLight
+					position={spotLightPosition}
+					angle={spotLightAngle}
+					intensity={spotLightIntensity}
+				/>
+				{backSpotlight && (
 					<spotLight
-						position={spotLightPosition}
+						position={[
+							spotLightPosition[0],
+							spotLightPosition[1],
+							-spotLightPosition[2],
+						]}
 						angle={spotLightAngle}
 						intensity={spotLightIntensity}
 					/>
-					{backSpotlight && (
-						<spotLight
-							position={[
-								spotLightPosition[0],
-								spotLightPosition[1],
-								-spotLightPosition[2],
-							]}
-							angle={spotLightAngle}
-							intensity={spotLightIntensity}
-						/>
-					)}
+				)}
+				<Suspense fallback={<Loader />}>
 					<Model
 						position={position}
 						rotation={rotation}
