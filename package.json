@@ -22,10 +22,13 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"@react-three/drei": "^9.13.0",
+		"@react-three/fiber": "^8.0.22",
 		"framer-motion": "^5.2.1",
 		"next": "latest",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
+		"react": "^18.1.0",
+		"react-dom": "^18.1.0",
+		"three": "^0.141.0"
 	},
 	"devDependencies": {
 		"@types/react": "^17.0.33",
