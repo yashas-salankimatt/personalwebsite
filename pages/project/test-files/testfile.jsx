@@ -26,7 +26,17 @@ function Template_component(props) {
 			{router.pathname != "/projects" &&
 				router.pathname != "/about" &&
 				router.pathname != "/experience" && <Menu></Menu>}
-			<div className="flex flex-col items-center max-w-full p-8">
+			<div className="rounded-2xl h-screen">
+				<ModelViewer
+					objectFilePath={"/assets/CNC2.0.obj"}
+					// autoRotate={false}
+					scale={4}
+					autoRotateSpeed={0.5}
+					className="rounded-2xl"
+					stars={false}
+				></ModelViewer>
+			</div>
+			<div className="flex flex-col items-center p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
 					Template Component Title
 				</a>
@@ -47,16 +57,6 @@ function Template_component(props) {
 						</a>
 					</Link>
 				)}
-				<div className="rounded-2xl">
-					<ModelViewer
-						objectFilePath={"/assets/CNC2.0.obj"}
-						// autoRotate={false}
-						scale={4}
-						autoRotateSpeed={0.5}
-						className="rounded-2xl"
-						stars={false}
-					></ModelViewer>
-				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}

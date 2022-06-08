@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
+import ModelViewer from "../../../../components/ModelViewer";
 
 function upgrades_1(props) {
 	const router = useRouter();
@@ -37,6 +38,17 @@ function upgrades_1(props) {
 						</a>
 					</Link>
 				)}
+				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+					Rotate and pan around the 3D model for this project below!
+				</a>
+				<div style={{ width: "40vh", height: "40vh", paddingTop: "2rem" }}>
+					<ModelViewer
+						objectFilePath={"/assets/CNC2.0.obj"}
+						maxDistance={1.5}
+						autoRotateSpeed={0.75}
+						// stars={false}
+					></ModelViewer>
+				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}

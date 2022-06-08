@@ -57,7 +57,7 @@ function ModelViewer({
 	backSpotlight = true,
 	stars = true,
 	minDistance = 0,
-	maxDistance = 5,
+	maxDistance = 3,
 	scale = 1,
 }) {
 	return (
