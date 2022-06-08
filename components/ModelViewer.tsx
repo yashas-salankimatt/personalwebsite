@@ -53,31 +53,31 @@ function ModelViewer({
 	return (
 		<div className="w-full h-full bg-black">
 			<Canvas>
-				<OrbitControls
-					minDistance={minDistance}
-					maxDistance={maxDistance}
-					autoRotate={autoRotate}
-					autoRotateSpeed={autoRotateSpeed}
-				/>
-				{stars && <Stars />}
-				<ambientLight intensity={ambientLightIntensity} />
-				<spotLight
-					position={spotLightPosition}
-					angle={spotLightAngle}
-					intensity={spotLightIntensity}
-				/>
-				{backSpotlight && (
+				<Suspense fallback={<Loader />}>
+					<OrbitControls
+						minDistance={minDistance}
+						maxDistance={maxDistance}
+						autoRotate={autoRotate}
+						autoRotateSpeed={autoRotateSpeed}
+					/>
+					{stars && <Stars />}
+					<ambientLight intensity={ambientLightIntensity} />
 					<spotLight
-						position={[
-							spotLightPosition[0],
-							spotLightPosition[1],
-							-spotLightPosition[2],
-						]}
+						position={spotLightPosition}
 						angle={spotLightAngle}
 						intensity={spotLightIntensity}
 					/>
-				)}
-				<Suspense fallback={<Loader />}>
+					{backSpotlight && (
+						<spotLight
+							position={[
+								spotLightPosition[0],
+								spotLightPosition[1],
+								-spotLightPosition[2],
+							]}
+							angle={spotLightAngle}
+							intensity={spotLightIntensity}
+						/>
+					)}
 					<Model
 						position={position}
 						rotation={rotation}
