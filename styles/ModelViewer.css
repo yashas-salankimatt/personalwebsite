@@ -1,0 +1,13 @@
+/* for larger screens */
+.ModelViewer {
+    width: 95%;
+    height: 50vh;
+    padding-top: 1rem;
+}
+
+/* media query for small screens */
+/* @media (max-width: 640px) {
+    .ModelViewer {
+        width: 95vw;
+    }
+} */

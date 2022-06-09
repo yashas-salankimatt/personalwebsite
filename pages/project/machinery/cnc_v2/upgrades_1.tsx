@@ -41,12 +41,11 @@ function upgrades_1(props) {
 				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 					Rotate and pan around the 3D model for this project below!
 				</a>
-				<div style={{ width: "40vh", height: "40vh", paddingTop: "2rem" }}>
+				<div className="ModelViewer">
 					<ModelViewer
 						objectFilePath={"/assets/CNC2.0.obj"}
 						maxDistance={1.5}
 						autoRotateSpeed={0.75}
-						// stars={false}
 					></ModelViewer>
 				</div>
 				<div
