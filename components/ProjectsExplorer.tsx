@@ -18,13 +18,33 @@ function ProjectsExplorer(props) {
 			text="Click through the hierarchy to find a project to preview here!"
 		/>
 	);
+	const [prevProjectSelected, setPrevProjectSelected] = React.useState("");
+	const [prevPreviewComponent, setPrevPreviewComponent] =
+		React.useState(previewComponent);
+	const [refreshedComponent, setRefreshedComponent] = React.useState("");
 
-	// TODO: Fix bug to scroll back up to top on preview component change
-	// useEffect(() => {
-	// 	if (this != null) {
-	// 		previewComponent.position
-	// 	}
-	// }, [previewComponent]);
+	useEffect(() => {
+		if (projectSelected == "" && prevProjectSelected != "") {
+			// console.log("Refreshing");
+			setRefreshedComponent(prevProjectSelected);
+			setPreviewComponent(prevPreviewComponent);
+			setProjectSelected(prevProjectSelected);
+		}
+		if (projectSelected != "") {
+			// console.log("setting");
+			setPrevProjectSelected(projectSelected);
+			setPrevPreviewComponent(previewComponent);
+		}
+		if (projectSelected != "" && projectSelected != refreshedComponent) {
+			setPreviewComponent(
+				<Default_preview_component
+					textColor="text-purple-900"
+					text="Click through the hierarchy to find a project to preview here!"
+				/>
+			);
+			setProjectSelected("");
+		}
+	}, [projectSelected]);
 
 	return (
 		projects && (
@@ -51,6 +71,7 @@ function ProjectsExplorer(props) {
 									setSubcategorySelected("");
 									setSubCategoriesIndex(0);
 									setProjectSelected("");
+									setPrevProjectSelected("");
 									setProjectsIndex(0);
 									setPreviewComponent(
 										<Default_preview_component
@@ -82,6 +103,7 @@ function ProjectsExplorer(props) {
 												setSubcategorySelected("");
 												setSubCategoriesIndex(0);
 												setProjectSelected("");
+												setPrevProjectSelected("");
 												setProjectsIndex(0);
 												setPreviewComponent(
 													<Default_preview_component
@@ -114,6 +136,7 @@ function ProjectsExplorer(props) {
 									setSubcategorySelected("");
 									setSubCategoriesIndex(0);
 									setProjectSelected("");
+									setPrevProjectSelected("");
 									setProjectsIndex(0);
 									setPreviewComponent(
 										<Default_preview_component
@@ -147,6 +170,7 @@ function ProjectsExplorer(props) {
 															})
 														);
 														setProjectSelected("");
+														setPrevProjectSelected("");
 														setProjectsIndex(0);
 														setPreviewComponent(
 															<Default_preview_component
@@ -178,6 +202,7 @@ function ProjectsExplorer(props) {
 							onClick={(event) => {
 								if (event.target == event.currentTarget) {
 									setProjectSelected("");
+									setPrevProjectSelected("");
 									setProjectsIndex(0);
 									setPreviewComponent(
 										<Default_preview_component

@@ -32,6 +32,7 @@ import tamuhacksign from "../pages/project/woodworking/decorations/tamuhacksign"
 import gradient_descent_435 from "../pages/project/software/class_projects/435_gradient_descent";
 import final_proj_315 from "../pages/project/software/class_projects/315_final_proj";
 import survivor_buddy from "../pages/project/mechatronics/survivor_buddy/hardware_dev";
+import senior_year_final from "../pages/project/mechatronics/survivor_buddy/senior_year_final";
 import urs_403 from "../pages/project/software/urs/urs_403";
 
 const projectsList = {
@@ -45,6 +46,10 @@ const projectsList = {
 						{
 							name: "Survivor Buddy Hardware Development",
 							component: survivor_buddy,
+						},
+						{
+							name: "Survivor Buddy 5.0 Final",
+							component: senior_year_final,
 						},
 					],
 				},
@@ -230,10 +235,10 @@ const projectsList = {
 							name: "Whitecreek Apartment Model",
 							component: whitecreek,
 						},
-						// {
-						// 	name: "Standard Apartment Model",
-						// 	component: standard,
-						// },
+						{
+							name: "Standard Apartment Model",
+							component: standard,
+						},
 					],
 				},
 			],

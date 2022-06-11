@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
+import ModelViewer from "../../../../components/ModelViewer";
 
 function wells(props) {
 	const router = useRouter();
@@ -18,7 +19,7 @@ function wells(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Creating Wellk Residence Hall 3D Model
+					Creating Wells Residence Hall 3D Model
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
@@ -37,6 +38,20 @@ function wells(props) {
 						</a>
 					</Link>
 				)}
+				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+					Rotate and pan around the 3D model for this project below!
+				</a>
+				<div className="ModelViewer">
+					<ModelViewer
+						objectFilePath={
+							"/assets/images/projects/cad/apartment_models/WellsModel.obj"
+						}
+						positionOffset={[0, -3, 0]}
+						rotation={[0, 0, 0]}
+						maxDistance={10}
+						autoRotateSpeed={0.75}
+					></ModelViewer>
+				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}

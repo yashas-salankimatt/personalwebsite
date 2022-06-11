@@ -43,7 +43,9 @@ function upgrades_1(props) {
 				</a>
 				<div className="ModelViewer">
 					<ModelViewer
-						objectFilePath={"/assets/CNC2.0.obj"}
+						objectFilePath={
+							"/assets/images/projects/machinery/cnc_v2/CNC2.0.obj"
+						}
 						maxDistance={1.5}
 						autoRotateSpeed={0.75}
 					></ModelViewer>

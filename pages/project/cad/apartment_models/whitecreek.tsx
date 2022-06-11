@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
+import ModelViewer from "../../../../components/ModelViewer";
 
 function whitecreek(props) {
 	const router = useRouter();
@@ -18,7 +19,7 @@ function whitecreek(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Creating Whitecreek Apartmente Hall 3D Model
+					Creating Whitecreek Apartment 3D Model
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
@@ -37,6 +38,22 @@ function whitecreek(props) {
 						</a>
 					</Link>
 				)}
+				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+					Rotate and pan around the 3D model for this project below!
+				</a>
+				<div className="ModelViewer">
+					<ModelViewer
+						objectFilePath={
+							"/assets/images/projects/cad/apartment_models/WhitecreekModel.obj"
+						}
+						positionOffset={[8, -2, 0]}
+						rotation={[0, 0, 0]}
+						maxDistance={10}
+						autoRotateSpeed={0.75}
+						spotLightPosition={[20, 25, 10]}
+						// spotLightIntensity={0.4}
+					></ModelViewer>
+				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}

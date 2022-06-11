@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
+import ModelViewer from "../../../../components/ModelViewer";
 
 function cnc_v1_build(props) {
 	const router = useRouter();
@@ -37,6 +38,18 @@ function cnc_v1_build(props) {
 						</a>
 					</Link>
 				)}
+				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+					Rotate and pan around the 3D model for this project below!
+				</a>
+				{/* <div className="ModelViewer">
+					<ModelViewer
+						objectFilePath={
+							"/assets/images/projects/machinery/cnc_v1/"
+						}
+						maxDistance={1.5}
+						autoRotateSpeed={0.75}
+					></ModelViewer>
+				</div> */}
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
