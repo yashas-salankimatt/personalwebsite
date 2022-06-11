@@ -32,7 +32,6 @@ function Template_component(props) {
 					// autoRotate={false}
 					scale={4}
 					autoRotateSpeed={0.5}
-					className="rounded-2xl"
 					stars={false}
 				></ModelViewer>
 			</div>
