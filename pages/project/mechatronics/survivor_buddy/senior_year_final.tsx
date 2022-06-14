@@ -19,7 +19,7 @@ function senior_year_final(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Survivor Buddy Hardware Development
+					Survivor Buddy Second Semester Software and Electronics Development
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
@@ -56,7 +56,7 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SBOverall.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -65,19 +65,10 @@ function senior_year_final(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						I am working with the Raytheon Professor Dr. Robin R. Murphy on the
-						NSF and Microsoft Research backed Survivor Buddy project.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						"The Survivor Buddy Project is a joint project between Texas A&M and
-						Stanford developing a web-enabled search and rescue robot that can
-						be retrofitted to any rescue robot (the Survivor Buddy “head”) while
-						advancing our understanding of computers and robots as a social
-						medium. It's not just what the Survivor Buddy transmits but how it
-						does it that is important; to paraphrase Marshall McLuhan, the
-						social medium is the message."- survivorbuddy.org. More info about
-						the Survivor Buddy project can be found at the Survivor Buddy
-						official website below.
+						I worked with the Raytheon Professor Dr. Robin R. Murphy on the NSF
+						and Microsoft Research backed Survivor Buddy project. My involvement
+						with this project is now complete and my work is detailed in my
+						explanations below.
 					</a>
 					<Link href="https://survivorbuddy.org/">
 						<a
@@ -93,46 +84,51 @@ function senior_year_final(props) {
 						</a>
 					</Link>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						I was tasked with designing new iterations of the Survivor Buddy
-						hardware and electronics for disaster relief. More specifically,
-						with improving the hardware of the existing version of Survivor
-						Buddy to improve its stability and make its movements more natural
-						while still keeping the cost of the robot down.
+						While I was tasked with designing the new hardware for Survivor
+						Buddy throughout this year, I had finished most of the development
+						of the motion system last semester. This semester, I focused on
+						polishing the design, improving the electronics, as well as writing
+						some control code as well as some experimental face tracking code.
+						The following two videos show close to the end result of my work on
+						this project. I then detail more of the specifics of my work below
+						the demos.
+					</a>
+					<iframe
+						src="https://www.youtube.com/embed/zvSSzbAYg_I?rel=0"
+						height={360}
+						frameBorder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen
+					></iframe>
+					<a className={"text-xl font-normal font-sans my-4 " + textColor}>
+						Base movement demo above- manually controlled
+					</a>
+					<iframe
+						src="https://www.youtube.com/embed/feYOtJn8_Bs?rel=0"
+						height={360}
+						frameBorder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen
+					></iframe>
+					<a className={"text-xl font-normal font-sans my-4 " + textColor}>
+						Face tracking and pose metching demo- it can be seen that Survivor
+						Buddy is matching my face movements in the demo above. This is done
+						with a Python script that sends GCode like commands to the Survivor
+						Buddy after analyzing facial pose with the camera and OpenCV and
+						matching the facial pose to the pose of the "face" or phone on the
+						Survivor Buddy platform.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						As such, I started by isolating the problem areas in the previous
-						system. This mostly involved idenifying that each of the degrees of
-						freedom of Survivor Buddy needed to be structurally supported by
-						something other than the servo attachment point as the servo was
-						taking load that it was not designed to handle properly. This meant
-						that the heavier parts of the robot needed to be supported by
-						bearings and the servos would simply provide the movement power and
-						not support. This was done on axes one and two of the robot.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Then for axis 3, I fixed the mounting method as the previous group
-						attached the servo to the structure with hot glue. I fixed this by
-						adding mounting points for the axis 3 servo.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						I was also inspired by a much earlier, more expensive version of
-						Survivor Buddy with a neck axis to try and add this neck axis back
-						as it provides more natural movements. The problem with this is that
-						the addition of a neck axis in a similar implementation as the axis
-						1 and 2 system would lead to a large increase of mass due to the
-						large bearings that would be required.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						To solve this problem, I designed a 4th axis neck mechanism that
-						would very simply attach to the 3rd axis and actuate the screen (a
-						phone) through an RC plane aileron mechanism (as can be seen in the
-						CAD model pictures below). This meant that no bearings were required
-						and the system was plug and play. If heavier phones or screens need
-						to be supported, this 4th axis can be removed due to its modularity.
-					</a>
-					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Below are some photos relevant to the project and their
-						descriptions.
+						For the electronics side, in order to clean up the system and make
+						it easier to assemble and replicate, I designed and fabricated a
+						custom PCB for this project that routed all the servo connections
+						properly as well as integrating an Arduino Nano as the
+						microcontroller instead of an Arduino Uno (like in the previous
+						version). I also had to add a voltage regulator to the electronics
+						system to give the servos the right voltage, which they weren't
+						getting before. Below are some photos of the completed PCB, the PCB
+						integrated into the electronics as well as the improvement that can
+						be seen from the use of the PCB.
 					</a>
 				</div>
 				<div
@@ -140,7 +136,7 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy1-1.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SBElectronics.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -149,8 +145,8 @@ function senior_year_final(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Above is the previous version hardware for Survivor Buddy- created
-						by a senior capstone team.
+						Above is the PCB integrated into the electronics box of the new
+						Survivor Buddy.
 					</a>
 				</div>
 				<div
@@ -158,19 +154,7 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-1.PNG"
-						width="auto"
-						height="auto"
-						alt="main photo"
-						className="rounded-2xl"
-					></img>
-				</div>
-				<div
-					className="max-w-lg mt-4 mb-4 rounded-2xl "
-					style={{ boxShadow: imageDivStyle }}
-				>
-					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddy2-2.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/SBElectronics-old.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -179,10 +163,14 @@ function senior_year_final(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						The above 2 photos are the current iteration of the hardware for
-						Survivor Buddy- designed, modeled, fabricated, assembled, and
-						programmed by me. The photos below are of the CAD model for the
-						current iteration of Survivor Buddy.
+						Above is the old electronics, with an Arduino Uno and much more
+						messy and unreliable wiring.
+					</a>
+				</div>
+				<div className="flex flex-col max-w-5xl mt-8">
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Below are some various photos of the completed PCB as well as some
+						pictures of the fabrication process on my homemade CNC.
 					</a>
 				</div>
 				<div
@@ -190,7 +178,7 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-1.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB1.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -202,7 +190,60 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/SurvivorBuddyCAD-2.PNG"
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB2.jpg"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB3.jpg"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB4.jpg"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB5.jpg"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
+				</div>
+				<div className="flex flex-col max-w-5xl mt-8">
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Below is one of the first fails of trying to fabricate this PCB.
+					</a>
+				</div>
+				<div
+					className="max-w-lg mt-4 mb-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCBFail.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
