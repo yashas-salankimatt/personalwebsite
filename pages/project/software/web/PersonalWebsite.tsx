@@ -18,8 +18,8 @@ function PersonalWebsite(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Personal Website Built Using React, Typscript, Next, Tailwind, and
-					Framer Motion
+					Personal Website Built Using React, Typscript, Next, Tailwind, Framer
+					Motion, and ThreeJS
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
@@ -74,7 +74,8 @@ function PersonalWebsite(props) {
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						As a solution, I decided to make this website using React.js,
 						Typescript, Next.js, Tailwind CSS, and using Framer Motion for
-						animations.
+						animations. I then used ThreeJS to show interactive 3D models of my
+						projects.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						On this website, I was able to style my website more in line with my

@@ -19,6 +19,8 @@ import magic_shelves from "../pages/project/mechatronics/hackathons/magic_shelve
 import light_bars from "../pages/project/mechatronics/misc/light_bars";
 import monica from "../pages/project/mechatronics/misc/monica";
 import init_progress from "../pages/project/mechatronics/robot_arm/init_progress";
+import gearboxes from "../pages/project/mechatronics/robot_arm/gearboxes";
+import first_completed_arm from "../pages/project/mechatronics/robot_arm/first_completed_arm";
 import PersonalWebsite from "../pages/project/software/web/PersonalWebsite";
 import light_up from "../pages/project/woodworking/decorations/light_up";
 import mom_bracelet from "../pages/project/woodworking/decorations/mom_bracelet";
@@ -34,6 +36,7 @@ import final_proj_315 from "../pages/project/software/class_projects/315_final_p
 import survivor_buddy from "../pages/project/mechatronics/survivor_buddy/hardware_dev";
 import senior_year_final from "../pages/project/mechatronics/survivor_buddy/senior_year_final";
 import urs_403 from "../pages/project/software/urs/urs_403";
+import urs_404 from "../pages/project/software/urs/urs_404";
 
 const projectsList = {
 	Categories: [
@@ -77,6 +80,14 @@ const projectsList = {
 							name: "Initial Progress on V1",
 							component: init_progress,
 						},
+						{
+							name: "Gearbox and Actuator Design",
+							component: gearboxes,
+						},
+						{
+							name: "First Completed Robot Arm",
+							component: first_completed_arm,
+						},
 					],
 				},
 				{
@@ -103,6 +114,10 @@ const projectsList = {
 						{
 							name: "Intro and First Sem Work",
 							component: urs_403,
+						},
+						{
+							name: "Second Sem Work, Conclusion",
+							component: urs_404,
 						},
 					],
 				},

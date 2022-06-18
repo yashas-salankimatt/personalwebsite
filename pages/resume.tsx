@@ -8,7 +8,7 @@ function resume(props) {
 			<iframe
 				width="100%"
 				height="90%"
-				src="/assets/YSResume.pdf"
+				src="/assets/documents/YSResume.pdf"
 				className="pl-8 pr-8"
 			></iframe>
 		</div>

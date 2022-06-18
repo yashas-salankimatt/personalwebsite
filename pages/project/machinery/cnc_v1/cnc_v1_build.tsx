@@ -41,15 +41,17 @@ function cnc_v1_build(props) {
 				<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 					Rotate and pan around the 3D model for this project below!
 				</a>
-				{/* <div className="ModelViewer">
+				<div className="ModelViewer">
 					<ModelViewer
 						objectFilePath={
-							"/assets/images/projects/machinery/cnc_v1/"
+							"/assets/images/projects/machinery/cnc_v1/cncv1.obj"
 						}
-						maxDistance={1.5}
+						rotation={[0, 0, 0]}
+						positionOffset={[0.14, 0, 0.216]}
+						maxDistance={0.5}
 						autoRotateSpeed={0.75}
 					></ModelViewer>
-				</div> */}
+				</div>
 				<div
 					className="max-w-lg mt-4 mb-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
