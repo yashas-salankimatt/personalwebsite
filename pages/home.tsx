@@ -99,13 +99,24 @@ function Homepage(props: Props) {
 					</a>
 				</div>
 				<div className="ml-16">
+					<Link href="/notable">
+						<button
+							className="text-blue-900 bg-blue-100 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
+							type="button"
+							style={{ border: "1px solid black" }}
+						>
+							Notable Projects
+						</button>
+					</Link>
+				</div>
+				<div className="ml-16">
 					<Link href="/projects">
 						<button
 							className="text-blue-900 bg-blue-100 hover:bg-blue-900 hover:text-white font-bold uppercase text-md px-6 py-3 rounded-md outline-none focus:outline-none mb-1 ease-linear transition-all duration-150"
 							type="button"
 							style={{ border: "1px solid black" }}
 						>
-							Check out my projects!
+							Check out my project explorer!
 						</button>
 					</Link>
 				</div>
@@ -119,7 +130,7 @@ function Homepage(props: Props) {
 						>
 							<div className="rounded-2xl max-h-75vh">
 								<img
-									src="/assets/images/RingMilitaryWalk.jpg"
+									src="/assets/images/Grad22HatToss.jpg"
 									width="auto"
 									height="auto"
 									className="rounded-2xl max-h-75vh"
