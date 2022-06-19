@@ -42,7 +42,7 @@ function tamuhack(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/TAMUhackSign.jpg"
+						src="/assets/images/TAMUhack22.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -51,18 +51,18 @@ function tamuhack(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						From Mar 2020 to current.
+						From Mar 2020 to April 2022.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Recruiting sponsorships and maintaining sponsor relations for our
+						Recruited sponsorships and maintained sponsor relations for our
 						hackathons, HowdyHack and TAMUhack.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Organizing logistics including prizes, venue, food, live streaming,
+						Organized logistics including prizes, venue, food, live streaming,
 						scheduling, etc.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Occasionally create custom decorations like the one seen above.
+						Occasionally create custom decorations like the one seen below.
 					</a>
 					<Link href="https://tamuhack.com/">
 						<a
@@ -77,6 +77,18 @@ function tamuhack(props) {
 							TAMUhack Website
 						</a>
 					</Link>
+				</div>
+				<div
+					className="max-w-lg mt-4 rounded-2xl "
+					style={{ boxShadow: imageDivStyle }}
+				>
+					<img
+						src="/assets/images/TAMUhackSign.jpg"
+						width="auto"
+						height="auto"
+						alt="main photo"
+						className="rounded-2xl"
+					></img>
 				</div>
 			</div>
 		</div>

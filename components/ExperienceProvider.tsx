@@ -6,9 +6,14 @@ import engineering_inc from "../pages/experiences/engineering_inc";
 import tamuhack from "../pages/experiences/tamuhack";
 import urs_research from "../pages/experiences/urs_research";
 import survivor_buddy from "../pages/experiences/survivor_buddy";
+import cmu_2022 from "../pages/experiences/cmu_2022";
 
 const experienceList = {
 	Categories: [
+		{
+			name: "Robotics Research Intern at CMU Biorobotics Lab",
+			component: cmu_2022,
+		},
 		{
 			name: "Survivor Buddy Research with Dr. Robin R. Murphy",
 			component: survivor_buddy,

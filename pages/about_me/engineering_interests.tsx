@@ -59,25 +59,22 @@ function EngineeringInterests(props) {
 						as well.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Under <strong>Dr. Robin R. Murphy,</strong> I am working on
-						improving the hardware for <strong>Survivor Buddy,</strong> an
-						interactive platform for companionship for trapped disaster victims.
+						Under <strong>Dr. Robin R. Murphy,</strong> I worked on improving
+						the hardware for <strong>Survivor Buddy,</strong> an interactive
+						platform for companionship for trapped disaster victims.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Under <strong>Professor Stavros Kalafatis,</strong> I am working on
-						an implementing a system that will map an indoor environment, be
-						able to be moved elsewhere in the environment with changes to the
-						environment like doors swinging or furniture moving and still know
-						where it is. This system will also be able to able to update the
-						environment map, keeping only the persistent, proper data of the
-						indoor environment.
+						Under <strong>Professor Stavros Kalafatis,</strong> I implemented a
+						system that will revise indoor map data in real time given there
+						were changes to the environment since the robot had last mapped it.
+						This allows for the most up to data data of indoor systems for cheap
+						robotic systems using inexpensive sensors.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Through the <strong>Engineering Incubator program</strong>, I am
-						working on the development of a low-cost 6-axis robotic arm based on
-						stepper motors and hybrid cycloidal gearboxes that will use computer
-						vision and probe points to automate part inspection for small scale
-						job shops.
+						Through the <strong>Engineering Incubator program</strong>, I
+						developed a low-cost 7-axis robotic arm based on stepper motors and
+						hybrid cycloidal gearboxes that uses computer vision and probe
+						points to automate part inspection for small scale job shops.
 					</a>
 					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
 						More information about these and other projects and experiences in

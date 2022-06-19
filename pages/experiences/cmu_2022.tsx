@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Menu from "../../components/Menu";
 import Link from "next/link";
 
-function engineering_inc(props) {
+function cmu_2022(props) {
 	const router = useRouter();
 	const rgbaColor = "rgba(6, 78, 59, .6)";
 	const textColor = "text-green-900";
@@ -18,12 +18,13 @@ function engineering_inc(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Engineering Incubator Founder
+					Robotics Research Intern at Carnegie Mellon University, Biorobotics
+					Lab under Dr. Howie Choset
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
 					router.pathname == "/experience") && (
-					<Link href="/experiences/engineering_inc">
+					<Link href="/experiences/cmu_2022">
 						<a
 							target="_blank"
 							className={
@@ -39,39 +40,28 @@ function engineering_inc(props) {
 				)}
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						From December 2019 to December 2022.
+						From June 2022 to August 2022.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Founder in the engineering focused business incubator at Texas A&M
-						working on EasyTrack- automated part inspection for small scale
-						machine shops and woodworking shops.
+						Working on a hardware in loop (HIL) test stand for simulation of
+						satellite docking systems
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Developed an inexpensive 7-axis robot arm system based on stepper
-						motors and hybrid cycloidal gearbox actuators for the automation of
-						part inspection.
+						Iterating on a bimanual test stand used to simulate spacecraft
+						docking hardware for Northrop Grumman
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Conducted market analyses, customer interviews, and analyzed
-						business feasibility.
+						Implementing impedance matching algorithms on the HIL test stand for
+						space physics simulation
 					</a>
-					<Link href="https://engineering.tamu.edu/student-life/eep/engineering-incubator/index.html">
-						<a
-							target="_blank"
-							className={
-								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
-								buttonColor +
-								" " +
-								textColor
-							}
-						>
-							Engineering Inc Website
-						</a>
-					</Link>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Improving the controllers, estimators, trajectory planning, and
+						optimization systems for satellite docking
+					</a>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default engineering_inc;
+export default cmu_2022;

@@ -44,6 +44,14 @@ function NotablePage(props: Props) {
 				<div className="z-10 self-center justify-center flex flex-col ">
 					<div className="w-5/6 justify-center items-center flex flex-col sm:flex-row flex-wrap m-8">
 						<NotableThumbnail
+							title="My First Completed 3D Printed, High Reach and Payload 7-Axis Robot Arm"
+							linkPath="/project/mechatronics/robot_arm/first_completed_arm"
+							imagePath="/assets/images/projects/mechatronics/robot_arm/Arm2Crop.jpg"
+							description="I built from scratch an inexpensive 3D printed 7-axis robot arm based on 
+							stepper motors and custom cycloidal gearboxes. I also created a ROS package to implement 
+							more complex control algorithms and functions."
+						/>
+						<NotableThumbnail
 							title="A Heavy Duty, Inexpensive CNC Router for my Apartment Machine Shop"
 							linkPath="/project/machinery/cnc_v2/upgrades_1"
 							imagePath="/assets/images/projects/machinery/cnc_v2/upgrades/1.jpg"

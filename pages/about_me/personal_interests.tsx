@@ -37,18 +37,18 @@ function PersonalInterests(props) {
 						</a>
 					</Link>
 				)}
-				{/* <div
+				<div
 					className="max-w-sm mt-4 rounded-2xl "
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/about/tamu-logo.png"
+						src="/assets/images/about/Running2.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
 						className="rounded-2xl"
 					></img>
-				</div> */}
+				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
 						In my free time, I enjoy woodworking and making things for myself
@@ -57,8 +57,12 @@ function PersonalInterests(props) {
 						create unique products.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						When I'm not making stuff, you'll find me cooking, reading, and
-						playing frisbee, basketball, badminton, or Valorant.
+						When I'm not making stuff, you'll find me running, cooking, reading,
+						and playing frisbee, basketball, badminton, or Valorant.
+					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						So far, I have run a half-marathon as well as a marathon (picture
+						above).
 					</a>
 					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
 						More information my woodworking and miscellaneous projects in my{" "}

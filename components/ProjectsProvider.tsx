@@ -37,6 +37,7 @@ import survivor_buddy from "../pages/project/mechatronics/survivor_buddy/hardwar
 import senior_year_final from "../pages/project/mechatronics/survivor_buddy/senior_year_final";
 import urs_403 from "../pages/project/software/urs/urs_403";
 import urs_404 from "../pages/project/software/urs/urs_404";
+import housewarming_gift1 from "../pages/project/woodworking/decorations/housewarming_gift1";
 
 const projectsList = {
 	Categories: [
@@ -210,6 +211,10 @@ const projectsList = {
 						{
 							name: "Name Plaques made for Friends",
 							component: plaques,
+						},
+						{
+							name: "Housewarming Decorations for Family Friends",
+							component: housewarming_gift1,
 						},
 					],
 				},

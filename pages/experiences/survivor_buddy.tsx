@@ -52,19 +52,23 @@ function survivor_buddy(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Worked from August 2021 to current.
+						Worked from August 2021 to May 2022.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Working with the Raytheon Professor Dr. Robin R. Murphy on the NSF
+						Worked with the Raytheon Professor Dr. Robin R. Murphy on the NSF
 						and Microsoft Research backed Survivor Buddy project.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Designing new iterations of the Survivor Buddy hardware and
+						Developed new iterations of the Survivor Buddy hardware and
 						electronics for disaster relief.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Developing a moving and environment mapping platform for Survivor
-						Buddy base for telemedicine use.
+						Modeled, fabricated, and assembled the mechanical assembly for the
+						inexpensive robot system.
+					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						Designed and fabricated a custom PCB, wrote face tracking and pose
+						matching code using OpenCV.
 					</a>
 					<Link href="https://survivorbuddy.org/">
 						<a

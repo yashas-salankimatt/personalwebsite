@@ -52,23 +52,27 @@ function urs_research(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						From August 2021 to current.
+						From August 2021 to May 2022.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Creating a system to localize a robotic system based on landmarks,
+						Created a system to localize a robotic system based on landmarks,
 						filtering our everyday changes to indoor environments.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Programming a model to update pre-existing indoor maps with new data
+						Programmed a model to update pre-existing indoor maps with new data
 						on changes to indoor environments such as doors or furniture moving.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Implementing the above systems on a physical robot with LIDAR and an
+						Implemented the above systems on a physical robot with LIDAR and an
 						RGB-D camera, making use of ROS and the Gazebo simulator to quickly
 						iterate on the SLAM models and algorithms.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						This research is done as a part of the Undergraduate Research
+						Validated and tested above system, compared to other
+						implementations, and wrote a thesis on my work.
+					</a>
+					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
+						This research was done as a part of the Undergraduate Research
 						Scholars program as well as for senior capstone.
 					</a>
 					<Link href="https://launch.tamu.edu/Undergraduate-Research/URS">
@@ -94,7 +98,33 @@ function urs_research(props) {
 								textColor
 							}
 						>
-							Link to More Info About My Work
+							Link to More Info About My First Semester Work
+						</a>
+					</Link>
+					<Link href="/project/software/urs/urs_404">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Link to More Info About My Second Semester Work and Conclusion
+						</a>
+					</Link>
+					<Link href="/assets/documents/ECEN404Report.pdf">
+						<a
+							target="_blank"
+							className={
+								"mt-4 text-lg text-center font-semibold font-sans p-2 rounded-md " +
+								buttonColor +
+								" " +
+								textColor
+							}
+						>
+							Link to My Capstone Project Final Report
 						</a>
 					</Link>
 				</div>

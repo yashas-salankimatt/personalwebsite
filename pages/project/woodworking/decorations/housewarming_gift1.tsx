@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Menu from "../../../../components/Menu";
 import Link from "next/link";
 
-function light_up(props) {
+function housewarming_gift1(props) {
 	const router = useRouter();
 	const rgbaColor = "rgba(76, 29, 149, .6)";
 	const textColor = "text-purple-900";
@@ -23,7 +23,7 @@ function light_up(props) {
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
 					router.pathname == "/experience") && (
-					<Link href="/project/woodworking/decorations/light_up">
+					<Link href="/project/woodworking/decorations/housewarming_gift1">
 						<a
 							target="_blank"
 							className={
@@ -42,7 +42,7 @@ function light_up(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/woodworking/decorations/HarrisonLightUp.jpg"
+						src="/assets/images/projects/woodworking/decorations/HousewarmingDecor.jpg"
 						width="auto"
 						height="auto"
 						alt="main photo"
@@ -51,27 +51,15 @@ function light_up(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Here, I made some edge lit acrylic decorations for friends. The one
-						above is for Harrison Potter and is meant to be the album cover of
-						"Anak Ko" by Jay Som. The one below is for Angela Wu and it is her
-						signature with some decorative edging.
+						Here, I made some simple housewarming presents for some family
+						friends on my CNC machine. They provided the designs that their
+						daughter drew and I took the design, converted it into a machinable
+						format and machined and stained it.
 					</a>
-				</div>
-				<div
-					className="max-w-lg mt-4 mb-4 rounded-2xl "
-					style={{ boxShadow: imageDivStyle }}
-				>
-					<img
-						src="/assets/images/projects/woodworking/decorations/AngelaLightUp.jpg"
-						width="auto"
-						height="auto"
-						alt="main photo"
-						className="rounded-2xl"
-					></img>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default light_up;
+export default housewarming_gift1;

@@ -49,38 +49,39 @@ function School(props) {
 				</div>
 				<div className="flex flex-col max-w-5xl mt-8">
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Howdy, my name is <strong>Yashas Salankimatt</strong> and I am an
-						honors senior
-						<strong>Computer Engineering: Electrical Engineering</strong> track
-						student at <strong>Texas A&M University.</strong>
+						I graduated with honors and as an Undergraduate Research Scholar
+						from <strong>Texas A&M University</strong> with a major in
+						<strong>Computer Engineering</strong>: Electrical Engineering track.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						I'm also a <strong>Brockman Scholar</strong> and am graduating with
-						my bachelor's degree in 3 years, with plans to finish a fast track{" "}
-						<strong>masters</strong> in CE with a concentration in robotics in
-						one more year after that under <strong>Dr. Robin R. Murphy</strong>{" "}
-						through the Fast Track Program.
+						I was also a <strong>Brockman Scholar</strong> for undergrad and
+						graduated with my bachelor's degree in 3 years, with plans to finish
+						a fast track <strong>masters</strong> in CE with a concentration in
+						robotics in one more year after that under{" "}
+						<strong>Dr. Robin R. Murphy</strong> through the Fast Track Program.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						Currently, I am a part of{" "}
-						<strong>2 main student organizations</strong> here on campus.
+						I was a part of
+						<strong>2 main student organizations</strong> on campus during
+						undergrad:
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						The first is <strong>TAMUhack.</strong> TAMUhack is the organization
-						that is in charge of holding two of the software-primary hackathons
-						here on campus and is also responsible for hosting the biggest
-						hackathon in Texas. In this team, I am the primary hardware
-						director, and also take care of logistics, bringing in and managing
-						sponsors as well as hacker experience for the events.
+						The first was <strong>TAMUhack.</strong> TAMUhack is the
+						organization that is in charge of holding two of the
+						software-primary hackathons here on campus and is also responsible
+						for hosting the biggest hackathon in Texas. In this team, I am the
+						primary hardware director, and also take care of logistics, bringing
+						in and managing sponsors as well as hacker experience for the
+						events.
 					</a>
 					<a className={"text-xl font-normal font-sans mt-4 " + textColor}>
-						The second is the <strong>Engineering Incubator.</strong> This is a
+						The second was the <strong>Engineering Incubator.</strong> This is a
 						business incubator that is hosted in the engineering school that
 						focuses on teaching engineering students the primary tenets of
 						entrepreneurship through helping them launch their own startups.
-						Through this incubator, I am currently working on a startup to
-						automate part inspection for smaller machine shops with the use of a
-						custom robotic arm in conjunction with CV and a custom probe tool.
+						Through this incubator, I worked on a startup to automate part
+						inspection for smaller machine shops with the use of a custom
+						robotic arm in conjunction with CV and a custom probe tool.
 					</a>
 					<a className={"text-xl font-bold font-sans mt-4 " + textColor}>
 						More information about these and other research projects and

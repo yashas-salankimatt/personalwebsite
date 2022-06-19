@@ -226,7 +226,7 @@ function senior_year_final(props) {
 					style={{ boxShadow: imageDivStyle }}
 				>
 					<img
-						src="/assets/images/projects/mechatronics/survivor_buddy/PCB5.jpg"
+						src="/assets/images/projects/mechatronics/survivor_buddy/PCB5.JPG"
 						width="auto"
 						height="auto"
 						alt="main photo"
