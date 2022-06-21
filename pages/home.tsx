@@ -43,9 +43,11 @@ function Homepage(props: Props) {
 				</div>
 				<div className="ml-16 mt-6">
 					<a className="text-2xl font-normal font-sans text-blue-900">
-						Howdy! I'm Yashas- a senior computer engineering major at Texas A&M
-						University. I'm passionate about robotics and software engineering.
-						Check out some of my projects at the link below!
+						Howdy! I'm <strong>Yashas</strong>- a recent{" "}
+						<strong>Computer Engineering</strong> graduate at{" "}
+						<strong>Texas A&M University.</strong> I'm passionate about robotics
+						and software engineering. Check out some of my projects at the links
+						below!
 					</a>
 				</div>
 				<div className="ml-16 mt-8">
