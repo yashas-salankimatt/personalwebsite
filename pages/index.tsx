@@ -20,10 +20,10 @@ export default function Home() {
 			<Head>
 				<title>Yashas Salankimatt</title>
 			</Head>
-			<div className="flex flex-col">
+			{/* <div className="flex flex-col">
 				<Menu />
 				<Homepage />
-			</div>
+			</div> */}
 		</div>
 	);
 }
