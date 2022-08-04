@@ -11,13 +11,10 @@ function Homepage(props: Props) {
 	const [homeAnimate, setHomeAnimate] = React.useState(false);
 
 	useEffect(() => {
-		// if (router.pathname == "/home") {
-		// 	router.push("/");
-		// }
-		// setHomeAnimate(true);
-		router.push(
-			"https://proprio.notion.site/Proprio-Robotics-Making-Robotics-Automation-Available-for-All-2e969e20f0ce4cd4b6e304d9c833edc4"
-		);
+		if (router.pathname == "/home") {
+			router.push("/");
+		}
+		setHomeAnimate(true);
 	}, []);
 
 	return (
