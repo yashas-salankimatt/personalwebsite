@@ -19,7 +19,7 @@ function first_completed_arm(props) {
 				router.pathname != "/experience" && <Menu></Menu>}
 			<div className="flex flex-col items-center max-w-full p-8">
 				<a className={"text-3xl font-bold font-sans " + textColor}>
-					Creating a 3D Printed Gearbox for a Stepper Motor Actuator
+					My First Completed Robot Arm
 				</a>
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
