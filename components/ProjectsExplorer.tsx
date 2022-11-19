@@ -76,7 +76,7 @@ function ProjectsExplorer(props) {
 									setPreviewComponent(
 										<Default_preview_component
 											textColor="text-purple-900"
-											text="Click through the hierarchy to find a project to preview here!"
+											text="Click through hierarchy to find a project to preview here!"
 										/>
 									);
 								}
