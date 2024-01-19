@@ -23,7 +23,7 @@ function fab_box_build(props) {
 				{(router.pathname == "/projects" ||
 					router.pathname == "/about" ||
 					router.pathname == "/experience") && (
-					<Link href="/project/woodworking/decorations/fab_box_build">
+					<Link href="/project/machinery/fab_box/fab_box_build">
 						<a
 							target="_blank"
 							className={
