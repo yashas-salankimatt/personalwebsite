@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
-function mirror(props) {
+function reflection(props) {
 	const router = useRouter();
 
 	useEffect(() => {
@@ -13,4 +13,4 @@ function mirror(props) {
 	return <div></div>;
 }
 
-export default mirror;
+export default reflection;
